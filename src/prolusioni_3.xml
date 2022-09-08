@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Appunti per le prime conferenze all’Università di Ginevra
+    Codice archivistico “BGE Ms. fr. 3951/1.3”
+
+    Filename: prolusioni3.xml
+    Author: Arianna Tescari
+    Date: 2022-09 -->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+    <!-- HEADER -->
+    <teiHeader>
+
+        <fileDesc> 
+                <titleStmt>
+                    <title xml:lang="fr"> Trois premières conférences à l'Université </title>
+                    <title type="sub">(cours d'ouverture, <date when="1891-11">novembre 1891</date>)</title>
+                    <author ref="#FdS" role="linguist">Ferdinand de Saussure</author>
+                </titleStmt>
+
+                <!-- informazioni editoriali -->
+                <editionStmt>
+                    <edition n="Digital edition"> Edizione digitale <date when="2022-09">settembre 2022</date> </edition>
+                    <respStmt> <!-- "Responsabilità" dei contenuti --> 
+                        <resp>Progetto coordinato da </resp>
+                        <persName> 
+                            <name ref="#AMDG">Angelo Mario del Grosso</name>
+                        </persName>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Codifica del testo curata da</resp>
+                        <persName>
+                            <name ref="#AT">Arianna Tescari</name>
+                        </persName>
+                    </respStmt>
+                    <respStmt xml:id="B_E">
+                        <resp>Trascrizione del testo curata da</resp>
+                        <persName>
+                            <name ref="#SB">Simon Bouquet</name>
+                        </persName>
+                        <persName>
+                            <name ref="#RE">Rudolf Engler</name>
+                        </persName>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Traduzione del testo curata da</resp>
+                        <persName>
+                            <name ref="#EF">Emanuele Fadda</name>
+                        </persName>
+                    </respStmt>
+                </editionStmt>
+
+                <!-- Informazioni sulla publbicazione -->
+                <pubblicationStmt>
+                    <publisher> Università di Pisa </publisher>
+                    <pubPlace> Pisa </pubPlace>
+                    <availability status="free"> Opera di libero accesso </availability>   
+                    <date when="2022-09"> Settembre 2022 </date> 
+                </pubblicationStmt>
+
+                <!-- Indica la fonte da cui un file è derivato  -->
+                <sourceDesc>
+                    <msDesc>
+                        <msIdentifier>                 
+                            <country >Svizzera</country> 
+                            <settlement>Ginevra</settlement>
+                            <istitution>Biblioteca di Ginevra</istitution>
+                            <repository role="library">Biblioteca di <placeName ref="#GE">Ginevra</placeName></repository> 
+                            <collection>Archivio Ferdinand de Saussure</collection>
+                            <idno type="inventory">3951/1.1-3</idno>
+                            <altIdentifier type="inventory"><idno>17786/vtae78f994bf3242bef</idno></altIdentifier>
+                        </msIdentifier>
+                        <!-- Descrizione del contenuto del manoscritto -->
+                        <msContents>
+                            <msItem>
+                                <author xml:lang="fr" ref="#FDS">Ferdinand de Saussure</author> 
+                                <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, <date when="1891-11">Novembre 1891</date>) </title>
+                                <docDate when="1891-11"> Novembre 1891 </docDate>
+                                <textlang mainlang="fr"> Francese </textlang>
+                                <p>E'una collezione di appunti per le prime tre conferenze all’Università di Ginevra, svoltesi il <date when="1891-11-06"> 06/11/1891 </date>, <date when="1891-11-10"> 10/11/1891 </date> e probabilmente<date when="1891-10-13"> 13/11/1891 </date> </p>
+                            </msItem>
+                        </msContents>
+                        <!-- Descrizione fisica -->
+                        <physDesc>
+                            <objectDesc form="folio">
+                                <supportDesc source="https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef"> 
+                                    <support>
+                                        <material> Fogli di carta sottili </material>
+                                    </support>
+                                    <extent>
+                                        <measureGrp type="notebook" unit="pages" source="https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef">
+                                            <measure quantity="30"> 30 pagine + </measure>
+                                            <measure quantity="15"> 15 pagine + </measure>
+                                            <measure quantity="22"> 22 pagine + </measure>
+                                            <measure quantity="1"> 1 foglietto </measure>
+                                            <p> Sono presenti 67 pagine (30 + 15 + 22 pagine + 1 foglietto) </p>
+                                        </measureGrp>
+                                    </extent>
+                                    <foliation> La pagina è una parte del quanderno d'appunti e cosiste in un foglio </foliation>
+                                    <condition>Le pagine si presentano in condizioni abbastanza buone, infatti nonostante si possano osservare alcuni strappi, la lettura non è ostacolata </condition>
+                                </supportDesc>
+                            </objectDesc>
+                            <handDesc hands="1">
+                                <handNote> Il testo è scritto dalla sola mano di <persName ref="#FdS">Ferdinand de Saussure </persName> </handNote>
+                            </handDesc>
+                        </physDesc>
+                        <!-- Storia -->
+                        <history>
+                            <origin ana="#pag1_note2">
+                                <origDate when="1891-11-06" cert="high">06/11/1891</origDate> Prima conferenza
+                                <origDate when="1891-11-10" cert="high">10/11/1891</origDate> Seconda conferenza
+                                <origDate when="1891-11-13" cert="low" source="#Chidichimo-2009">13/11/1891</origDate> Terza conferenza
+                                <origPlace>Ginevra</origPlace>
+                                <p>
+                                    Gli appunti, probabilmente destinati alla pubblicazione di una brochure, sono stati scritti per le conferenze all'Università di 
+                                    <placeName ref="#GE">Ginevra</placeName> e utilizzati in parte per le prime lezioni 
+                                    del corso di <foreign xml:lang="fr"> <hi rend="italic">Phonétique du grec et du latin</hi></foreign>, nel <date when="1891-11">novembre 1891</date>
+                                </p>
+                            </origin>
+                            <acquisition> 
+                                <p>Il testo è stato acquisito dalla biblioteca di <placeName ref="#GE">Ginevra</placeName></p>
+                            </acquisition>
+                        </history>                       
+                    </msDesc>
+                </sourceDesc>
+        </fileDesc>
+
+        <!-- informazioni riguardo lo schema, il modello di cofica e relazione fra fonte e testo derivato --> 
+        <encodingDesc>
+            <editorialDecl> <!-- Schema pericopi --> 
+                <segmentation>
+                    <p>
+                        <!-- Pagina 2-->
+                        <list xml:id="list_pag2">
+                            <!-- Pericope 1-->
+                            <label>
+                                <idno type="ID-pericope">91Caac0001</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0001" facs="#facs_pericope-1-pag2"> 
+                                <seg>
+                                    que si on supprime la langue d’un peuple en lui en imposant une autre [...]
+                                </seg>
+                                <desc>
+                                    Ferdinand de Sassure spiega che quando nasce una lingua nuova, nonostante la sua affermazione, si troverà ad essere altrettanto antica di quella precedente.
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 2 -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0002</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0002" facs="#facs_pericope-2-pag2"> 
+                                <seg>
+                                    Je rappellerais surtout, toujours dans le même ordre d’idées [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure esprime una riflessione sull'impossibilità che una lingua succeda a un'altra
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 3 -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0003</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0003" facs="#facs_pericope-3-pag2"> 
+                                <seg>
+                                    par exemple que le français succède au latin [...]
+                                </seg>
+                                <desc>
+                                    F. De Saussure fa un esempio basato sulla riflessione precedente
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 4 -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0004</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0004" facs="#facs_pericope-4-pag2"> 
+                                <seg>
+                                    mais que cette succession imaginaire de deux choses vient uniquement de ce qu’il nous plaît de donner deux noms successifs au même idiome [...]
+                                </seg>
+                                <desc>
+                                    F. De Saussure spiega che questo tipo di successione è più che altro immaginaria, quindi una sorta di convenzione che noi scegliamo di utilizzare per chiamare questo idioma
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 5 -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0005</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0005" facs="#facs_pericope-5-pag2"> 
+                                <seg>
+                                    Sans doute, l’influence qu’exercent sur notre esprit deux noms successifs de ce genre est tellement décisive et tellement inébranlable [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure esprime una riflessione su quanto questa concezione sia radicata nell'essere umano e quindi difficile da abbandonare
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 6a -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0006</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0006a" facs="#facs_pericope-6a-pag2"> 
+                                <seg>
+                                    Ce n’est - tous les linguistes le savent [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure fa una affermazione che si conclude nella pagina seguente. 
+                                </desc>
+                            </item>
+
+                        </list>
+
+                        <!-- Pagina 3 -->
+                        <list xml:id="list_pag3">
+                            <!-- Pericope 6b -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0006</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0006b" facs="#facs_pericope-6b-pag3"> 
+                                <seg>
+                                    Ce n’est - tous les linguistes le savent [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure afferma che a distinzione fra due lingue, di cui una deriva dall'altra, è realizzabile solo con una lunga osservazione prolungata
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 7 -->
+                            <label>
+                                <idno type="ID-pericope">91Caac0007</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0007" facs="#facs_pericope-7-pag3"> 
+                                <seg>
+                                    Qu’arrive-t-il invariablement quand un linguiste vient combattre l’idée erronée  [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure afferma che un linguista non dovrebbe mai partire dal presupposto che una lingua sarà derivata da un'altra
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 8-->
+                            <label>
+                                <idno type="ID-pericope">91Caac0008</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0008" facs="#facs_pericope-8-pag3"> 
+                                <seg>
+                                    Mon Dieu, on abonde dans tous sens, on convient que cela est une conception absurde  [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure ribadisce che fra l'istituzione di una lingua che proviene da un'altra c'è un lungo processo di transizione
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 9-->
+                            <label>
+                                <idno type="ID-pericope">91Caac0009</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0009" facs="#facs_pericope-9-pag3"> 
+                                <seg>
+                                    t après cela, est-on plus avancé qu’auparavant   [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure fa una domanda retorica
+                                </desc>
+                            </item>
+
+                            <!-- Pericope 10-->
+                            <label>
+                                <idno type="ID-pericope">91Caac0010</idno>
+                            </label>
+                            <item corresp="#pericope_91Caac0010" facs="#facs_pericope-10-pag3"> 
+                                <seg>
+                                    Nullement, parce qu’on persiste opiniâtrement à se figurer qu’il y a là préalablement  [...]
+                                </seg>
+                                <desc>
+                                    F. De Sassure risponde domanda precedentemente posta
+                                </desc>
+                            </item>
+                        </list>
+
+                    </p>
+                </segmentation>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc> 
+            <creation> <date when="1891-11">Novembre 1891</date> </creation>
+            <langUsage> 
+                <language ident="fr">Francese</language>
+            </langUsage>
+        </profileDesc>
+
+    </teiHeader>
+
+    <facsimile>
+        <!-- Pagina due  -->
+        <surface n="1" xml:id="pagina_prima">
+            <graphic url='pagina2.png' width='500px' height='800px' />
+                <!-- Pericopi e numerazione -->
+                <zone ulx="27" uly="21" lrx="66" lry="50" rendition="hotspot" xml:id="facs_hand-page-number-2"/> <!-- Numero 2 sx cerchiato -->
+                <zone ulx="25" uly="32" lrx="489" lry="311" rendition="hotspot" xml:id="facs_pericope-1-pag2"/> <!-- Pericope 1 -->
+                <zone points = ' 68,311 485,307 486,386 140,398 134,425 72,425 ' rendition="hotspot" xml:id="facs_pericope-2-pag2" /> <!-- Pericope 2 -->
+                <zone ulx="151" uly="395" lrx="444" lry="407" rendition="hotspot" xml:id="facs_pericope-3-pag2"/> <!-- Pericope 3 -->
+                <zone ulx="15" uly="493" lrx="485" lry="589" rendition="hotspot" xml:id="facs_pericope-4-pag2" /> <!-- Pericope 4 -->
+                <zone points = ' 28,606 483,593 471,739 303,737 301,764 9,767 ' rendition="hotspot" xml:id="facs_pericope-5-pag2" /> <!-- Pericope 5 --> 
+                <zone ulx="297" uly="747" lrx="490" lry="796" rendition="hotspot" xml:id="facs_pericope-6a-pag2"/> <!-- Pericope 6a-->
+               
+                <!-- Righe -->
+                <zone ulx="87" uly="34" lrx="488" lry="67" rendition="line" xml:id="facs_pag2-lb1"/> <!-- Riga 1 -->
+                <zone ulx="92" uly="69" lrx="496" lry="89" rendition="line" xml:id="facs_pag2-lb2"/> <!-- Riga 2 -->
+                <zone ulx="36" uly="94" lrx="493" lry="114" rendition="line" xml:id="facs_pag2-lb3"/> <!-- Riga 3 -->
+                <zone ulx="19" uly="117" lrx="495" lry="137" rendition="line" xml:id="facs_pag2-lb4"/> <!-- Riga 4 -->
+                <zone ulx="89" uly="141" lrx="489" lry="161" rendition="line" xml:id="facs_pag2-lb5"/> <!-- Riga 5 -->
+                <zone ulx="89" uly="168" lrx="490" lry="195" rendition="line" xml:id="facs_pag2-lb6"/> <!-- Riga 6 -->
+                <zone ulx="22" uly="200" lrx="489" lry="218" rendition="line" xml:id="facs_pag2-lb7"/> <!-- Riga 7 -->
+                <zone ulx="84" uly="224" lrx="487" lry="242" rendition="line" xml:id="facs_pag2-lb8"/> <!-- Riga 8 -->
+                <zone ulx="25" uly="250" lrx="492" lry="272" rendition="line" xml:id="facs_pag2-lb9"/> <!-- Riga 9 -->
+                <zone ulx="28" uly="278" lrx="414" lry="301" rendition="line" xml:id="facs_pag2-lb10"/> <!-- Riga 10 -->
+                <zone ulx="101" uly="308" lrx="499" lry="336" rendition="line" xml:id="facs_pag2-lb11"/> <!-- Riga 11 -->
+                <zone ulx="69" uly="342" lrx="490" lry="365" rendition="line" xml:id="facs_pag2-lb12"/> <!-- Riga 12 -->
+                <zone ulx="73" uly="372" lrx="476" lry="393" rendition="line" xml:id="facs_pag2-lb13"/> <!-- Riga 13 -->
+                <zone ulx="74" uly="398" lrx="484" lry="424" rendition="line" xml:id="facs_pag2-lb14"/> <!-- Riga 14 -->
+                <zone ulx="79" uly="430" lrx="469" lry="457" rendition="line" xml:id="facs_pag2-lb15"/> <!-- Riga 15 -->
+                <zone ulx="76" uly="462" lrx="458" lry="483" rendition="line" xml:id="facs_pag2-lb16"/> <!-- Riga 16 -->
+                <zone ulx="73" uly="491" lrx="482" lry="512" rendition="line" xml:id="facs_pag2-lb17"/> <!-- Riga 17 -->
+                <zone ulx="18" uly="513" lrx="487" lry="548" rendition="line" xml:id="facs_pag2-lb18"/> <!-- Riga 18 -->
+                <zone ulx="74" uly="552" lrx="475" lry="570" rendition="line" xml:id="facs_pag2-lb19"/> <!-- Riga 19 -->
+                <zone ulx="76" uly="580" lrx="474" lry="594" rendition="line" xml:id="facs_pag2-lb20"/> <!-- Riga 20 -->
+                <zone ulx="22" uly="607" lrx="482" lry="630" rendition="line" xml:id="facs_pag2-lb21"/> <!-- Riga 21 -->
+                <zone ulx="68" uly="637" lrx="443" lry="650" rendition="line" xml:id="facs_pag2-lb22"/> <!-- Riga 22 -->
+                <zone ulx="71" uly="664" lrx="449" lry="678" rendition="line" xml:id="facs_pag2-lb23"/> <!-- Riga 23 -->
+                <zone ulx="70" uly="691" lrx="467" lry="707" rendition="line" xml:id="facs_pag2-lb24"/> <!-- Riga 24 -->
+                <zone ulx="8" uly="720" lrx="472" lry="746" rendition="line" xml:id="facs_pag2-lb25"/> <!-- Riga 25 -->
+                <zone ulx="70" uly="750" lrx="470" lry="766" rendition="line" xml:id="facs_pag2-lb26"/> <!-- Riga 26 -->
+                <zone ulx="13" uly="772" lrx="484" lry="794" rendition="line" xml:id="facs_pag2-lb27"/> <!-- Riga 27 -->
+
+                <!-- Hotspot -->
+                <zone ulx="304" uly="45" lrx="342" lry="62" rendition="hotspot" xml:id="facs_pag2-lb1-del1" /> <!-- Cancellatura riga 1-->
+                <zone ulx="327" uly="32" lrx="351" lry="46" rendition="hotspot" xml:id="facs_pag2-lb1-add1" /> <!-- Aggiunta su cancellatura riga 1-->
+                <zone ulx="254" uly="63" lrx="290" lry="90" rendition="hotspot" xml:id="facs_pag2-lb2-del2" /> <!-- Cancellatura riga 2-->
+                <zone ulx="358" uly="94" lrx="492" lry="106" rendition="hotspot" xml:id="facs_pag2-lb3-del3" /> <!-- Cancellatura riga 3-->
+                <zone ulx="336" uly="85" lrx="395" lry="98" rendition="hotspot" xml:id="facs_pag2-lb3-add2"/> <!-- Aggiunta su cancellatura riga 3 -->
+                <zone ulx="27" uly="104" lrx="86" lry="140" rendition="hotspot" xml:id="facs_pag2-lb4-add3" /> <!-- Aggiunta margine sx riga 4-->
+                <zone ulx="160" uly="162" lrx="215" lry="173" rendition="hotspot" xml:id="facs_pag2-lb6-add4" /> <!-- Aggiunta riga 6 -->
+                <zone ulx="27" uly="200" lrx="76" lry="217" rendition="hotspot" xml:id="facs_pag2-lb7-add5" /> <!--Aggiunta su margine sx riga 7-->
+                <zone ulx="94" uly="204" lrx="170" lry="214" rendition="hotspot" xml:id="facs_pag2-lb7-del4" /> <!-- Cancellatura riga 7-->
+                <zone ulx="102" uly="191" lrx="167" lry="201" rendition="hotspot" xml:id="facs_pag2-lb7-add6" /> <!-- Correzione su cancellatura riga 7 -->
+                <zone ulx="92" uly="216" lrx="460" lry="243" rendition="hotspot" xml:id="facs_pag2-lb8-del5" /> <!-- Cancellatura riga 8-->
+                <zone ulx="25" uly="253" lrx="81" lry="268" rendition="hotspot" xml:id="facs_pag2-lb7-add7" /> <!-- Aggiunta margine sx riga 9-->
+                <zone ulx="93" uly="252" lrx="204" lry="278" rendition="hotspot" xml:id="facs_pag2-lb9-del6" /> <!-- Cancellatura riga 9-->
+                <zone ulx="394" uly="246" lrx="479" lry="253" rendition="hotspot" xml:id="facs_pag2-lb9-add8" /> <!-- Aggiunta riga 9 -->
+                <zone ulx="20" uly="288" lrx="81" lry="304" rendition="hotspot" xml:id="facs_pag2-lb10-add9" /> <!-- Aggiunta margine sx riga 10-->
+                <zone ulx="185" uly="283" lrx="267" lry="301" rendition="hotspot" xml:id="facs_pag2-lb10-del7" /> <!-- Cancellatura riga 10-->
+                <zone ulx="190" uly="272" lrx="243" lry="282" rendition="hotspot" xml:id="facs_pag2-lb10-add10" /> <!-- Aggiunta su cancellatura riga 10-->
+                <zone ulx="250" uly="316" lrx="399" lry="331" rendition="hotspot" xml:id="facs_pag2-lb11-del8" /> <!-- Cancellatura riga 11-->
+                <zone ulx="257" uly="304" lrx="332" lry="312" rendition="hotspot" xml:id="facs_pag2-lb11-add11" /> <!-- Aggiunta su cancellatura riga 11 -->
+                <zone points = ' 148,412 491,400 480,480 64,477 71,441 99,433 135,430 ' rendition="hotspot" xml:id="#facs_pag2-lb14-15-16-del9" /> <!-- Cancellatura righe 14-15-16 -->
+                <zone ulx="146" uly="400" lrx="460" lry="408" rendition="hotspot" xml:id="facs_pag2-lb14-add12" /> <!-- Aggiunta su cancellatura riga 14 -->
+                <zone ulx="373" uly="483" lrx="448" lry="492" rendition="hotspot" xml:id="facs_pag2-lb17-add13" /> <!-- Aggiunta riga 17 -->
+                <zone ulx="16" uly="521" lrx="65" lry="549" rendition="hotspot" xml:id="facs_pag2-lb18-add14" /> <!-- Aggiunta margine sx - riga 18 -->
+                <zone ulx="162" uly="530" lrx="281" lry="540" rendition="hotspot" xml:id="facs_pag2-lb18-del10"  /> <!-- Cancellatura riga 18 -->
+                <zone ulx="152" uly="517" lrx="299" rendition="hotspot" xml:id="facs_pag2-lb18-add15" /> <!-- Aggiunta su cancellatura riga 18 -->
+                <zone ulx="24" uly="613" lrx="95" lry="627" rendition="hotspot" xml:id="facs_pag2-lb21-add16" /> <!-- Aggiunta su margine sx riga 21 -->
+                <zone ulx="391" uly="628" lrx="427" lry="644" rendition="hotspot" xml:id="facs_pag2-lb22-del11"/> <!-- Cancellatura riga 22-->
+                <zone ulx="233" uly="652" lrx="353" lry="660" rendition="hotspot" xml:id="facs_pag2-lb23-add17" /> <!-- Aggiunta riga 23 -->
+                <zone ulx="229" uly="690" lrx="364" lry="711" rendition="hotspot" xml:id="facs_pag2-lb24-del12"  /> <!-- Cancellatura riga 24 -->
+                <zone ulx="229" uly="674" lrx="382" lry="696" rendition="hotspot" xml:id="facs_pag2-lb23-add18" /> <!-- Aggiunta su cancellatura riga 24 -->
+                <zone ulx="12" uly="721" lrx="69" lry="754" rendition="hotspot" xml:id="facs_pag2-lb23-add19" /> <!-- Aggiunta margine sx - riga 25 -->
+                <zone ulx="436" uly="718" lrx="471" lry="729" rendition="hotspot" xml:id="facs_pag2-lb25-del13"  /> <!-- Cancellatura riga 25 -->
+                <zone ulx="434" uly="702" lrx="466" rendition="hotspot" xml:id="facs_pag2-lb23-add20"  /> <!-- Aggiunta su cancellatura riga 25 -->
+                <zone ulx="78" uly="743" lrx="177" lry="778" rendition="hotspot" xml:id="facs_pag2-lb26-del14"/> <!-- Cancellatura riga 26 -->
+                <zone ulx="191" uly="752" lrx="287" lry="767" rendition="hotspot" xml:id="facs_pag2-lb26-del15"/> <!-- Cancellatura riga 26 -->
+                <zone ulx="205" uly="741" lrx="294" lry="753"  rendition="hotspot" xml:id="facs_pag2-lb23-add21"/> <!-- Aggiunta su cancellatura riga 26 -->
+
+        </surface>
+
+        <!-- Pagina 3: fronte-retro -->
+        <surfaceGrp>
+            <!-- Pagina tre -->
+            <surface n="2" xml:id="pagina_seconda">
+                <graphic url='pagina3.png' width='500px' height='800px' />    
+                <!-- Pericopi e numerazioni -->
+                <zone ulx="24" uly="20" lrx="47" lry="54" rendition="hotspot" xml:id="facs_hand-page-number-3"/> <!-- Numero di pagina (3) cerchiato -->
+                <zone points = ' 68,23 491,27 486,269 293,277 286,309 10,304 ' rendition="hotspot" xml:id="facs_pericope-6b-pag3"/> <!-- Pericope 6b che continua dalla pagina precedente -->
+                <zone points = ' 293,304 293,281 488,277 480,413 214,412 214,442 85,443 69,314 ' rendition="hotspot" xml:id="facs_pericope-7-pag3" /> <!-- Pericope 7 -->
+                <zone points = ' 214,411 483,414 488,655 106,658 79,677 10,675 8,647 74,645 83,450 219,445 ' rendition="hotspot" xml:id="facs_pericope-8-pag3"/> <!-- Pericope 8 -->
+                <zone points = ' 86,679 103,656 480,656 470,706 133,713 123,732 18,735 ' rendition="hotspot" xml:id="facs_pericope-9-pag3"/> <!-- Pericope 9 -->
+                <zone points = ' 486,800 477,709 133,713 127,730 78,734 75,794 ' rendition="hotspot" xml:id="facs_pericope-10a-pag3"/> <!-- Pericope 10a -->
+
+                <!-- Righe -->
+                <zone ulx="77" uly="25" lrx="328" lry="47" rendition="line" xml:id="facs_pag3-lb1"/> <!-- Riga 1 -->
+                <zone ulx="73" uly="41" lrx="485" lry="80" rendition="line" xml:id="facs_pag3-lb2"/> <!-- Riga 2 -->
+                <zone ulx="82" uly="93" lrx="487" lry="118" rendition="line" xml:id="facs_pag3-lb3"/> <!-- Riga 3 -->
+                <zone ulx="83" uly="121" lrx="475" lry="147" rendition="line" xml:id="facs_pag3-lb4"/> <!-- Riga 4 -->
+                <zone ulx="83" uly="155" lrx="485" lry="178" rendition="line" xml:id="facs_pag3-lb5"/> <!-- Riga 5 -->
+                <zone ulx="75" uly="189" lrx="481" lry="207" rendition="line" xml:id="facs_pag3-lb6"/> <!-- Riga 6 -->
+                <zone ulx="82" uly="213" lrx="472" lry="235" rendition="line" xml:id="facs_pag3-lb7"/> <!-- Riga 7 -->
+                <zone ulx="8" uly="240" lrx="491" lry="264" rendition="line" xml:id="facs_pag3-lb8"/> <!-- Riga 8 -->
+                <zone ulx="77" uly="276" lrx="484" lry="296" rendition="line" xml:id="facs_pag3-lb9"/> <!-- Riga 9 -->
+                <zone ulx="63" uly="307" lrx="490" lry="337" rendition="line" xml:id="facs_pag3-lb10"/> <!-- Riga 10 -->
+                <zone ulx="84" uly="344" lrx="485" lry="373" rendition="line" xml:id="facs_pag3-lb11"/> <!-- Riga 11 -->
+                <zone ulx="85" uly="382" lrx="467" lry="405" rendition="line" xml:id="facs_pag3-lb12"/> <!-- Riga 12 -->
+                <zone ulx="85" uly="414" lrx="469" lry="438" rendition="line" xml:id="facs_pag3-lb13"/> <!-- Riga 13 -->
+                <zone ulx="80" uly="447" lrx="487" lry="474" rendition="line" xml:id="facs_pag3-lb14"/> <!-- Riga 14 -->
+                <zone ulx="80" uly="487" lrx="470" lry="503" rendition="line" xml:id="facs_pag3-lb15"/> <!-- Riga 15 -->
+                <zone ulx="81" uly="512" lrx="486" lry="546" rendition="line" xml:id="facs_pag3-lb16"/> <!-- Riga 16 -->
+                <zone ulx="83" uly="554" lrx="474" lry="576" rendition="line" xml:id="facs_pag3-lb17"/> <!-- Riga 17 -->
+                <zone ulx="83" uly="585" lrx="487" lry="607" rendition="line" xml:id="facs_pag3-lb18"/> <!-- Riga 18 -->
+                <zone ulx="81" uly="615" lrx="486" lry="643" rendition="line" xml:id="facs_pag3-lb19"/> <!-- Riga 19 -->
+                <zone ulx="4" uly="646" lrx="481" lry="683" rendition="line" xml:id="facs_pag3-lb20"/> <!-- Riga 20 -->
+                <zone ulx="73" uly="687" lrx="476" lry="708" rendition="line" xml:id="facs_pag3-lb21"/> <!-- Riga 21 -->
+                <zone ulx="10" uly="715" lrx="465" lry="743" rendition="line" xml:id="facs_pag3-lb22"/> <!-- Riga 22 -->
+                <zone ulx="75" uly="750" lrx="465" lry="773" rendition="line" xml:id="facs_pag3-lb23"/> <!-- Riga 23 -->
+                <zone ulx="151" uly="777" lrx="488" lry="797" rendition="line" xml:id="facs_pag3-lb24"/> <!-- Riga 24 -->
+    
+                <!-- Hotspot -->
+                <zone ulx="80" uly="23" lrx="318" lry="50" rendition="hotspot" xml:id="facs_pag3-lb1-del1"/> <!-- Cancellatura riga 1 -->
+                <zone ulx="82" uly="59" lrx="218" lry="88" rendition="hotspot" xml:id="facs_pag3-lb2-del2"/> <!--Cancellatura inizio riga 2 -->
+                <zone ulx="334" uly="18" lrx="428" lry="54" rendition="hotspot" xml:id="facs_pag3-lb2-add1"/> <!-- Aggiunta riga 2 -->
+                <zone ulx="381" uly="73" lrx="490" lry="83" rendition="hotspot" xml:id="facs_pag3-lb2-del3"/> <!-- Cancellatura riga 2 -->
+                <zone ulx="370" uly="43" lrx="482" lry="62" rendition="hotspot" xml:id="facs_pag3-lb2-add2"/> <!-- Aggiunta su cancellatura riga 2-->
+                <zone ulx="154" uly="94" lrx="320" lry="118" rendition="hotspot" xml:id="facs_pag3-lb3-del4"/> <!-- Cancellatura riga 3 -->
+                <zone ulx="186" uly="209" lrx="267" lry="222" rendition="hotspot" xml:id="facs_pag3-lb7-add3"/> <!-- Aggiunta riga 7 -->
+                <zone ulx="17" uly="246" lrx="73" lry="280" rendition="hotspot" xml:id="facs_pag3-lb8-add4"/> <!-- Aggiunta su margine sx riga 8 -->
+                <zone ulx="83" uly="323" lrx="185" lry="345" rendition="hotspot" xml:id="facs_pag3-lb10-del5"/> <!-- Cancellatura riga 10 -->
+                <zone ulx="64" uly="301" lrx="175" lry="327" rendition="hotspot" xml:id="facs_pag3-lb10-add5"/> <!-- Aggiunta su cancellatura riga 10 -->
+                <zone ulx="417" uly="301" lrx="458" lry="312" rendition="hotspot" xml:id="facs_pag3-lb10-add6"/> <!-- Aggiunta fine riga 10 -->
+                <zone ulx="146" uly="359" lrx="189" lry="377" rendition="hotspot" xml:id="facs_pag3-lb11-del6"/> <!-- Cancellatura riga 11 -->
+                <zone ulx="194" uly="346" lrx="324" lry="377" rendition="hotspot" xml:id="facs_pag3-lb11-del7"/> <!-- Cancellatura seconda riga 11 -->
+                <zone ulx="232" uly="334" lrx="307" lry="350" rendition="hotspot" xml:id="facs_pag3-lb11-add7"/> <!-- Aggiunta su cancellatura seconda riga 11 -->
+                <zone ulx="214" uly="409" lrx="267" lry="423" rendition="hotspot" xml:id="facs_pag3-lb13-add8"/> <!-- Aggiunta riga 13 -->
+                <zone ulx="224" uly="620" lrx="316" lry="641" rendition="hotspot" xml:id="facs_pag3-lb19-del8"/> <!-- Cancellatura riga 19 -->
+                <zone ulx="8" uly="646" lrx="95" lry="663" rendition="hotspot" xml:id="facs_pag3-lb20-add9"/> <!-- Aggiunta riga 20 -->
+                <zone ulx="247" uly="659" lrx="462" lry="679" rendition="hotspot" xml:id="facs_pag3-lb20-del9"/> <!-- Cancellatura riga 20 -->
+                <zone ulx="76" uly="691" lrx="168" lry="713" rendition="hotspot" xml:id="facs_pag3-lb21-del10" /> <!-- Cancellatura riga 21 senza aggiunta sopra -->
+                <zone ulx="187" uly="697" lrx="317" lry="716" rendition="hotspot" xml:id="facs_pag3-lb21-del11" /> <!-- Cancelaltura riga 21, su cui c'è aggiunta -->
+                <zone ulx="245" uly="682" lrx="322" lry="695" rendition="hotspot" xml:id="facs_pag3-lb21-add10"/> <!-- Aggiunta su cancellatura riga 21 -->
+                <zone ulx="82" uly="730" lrx="176" lry="749" rendition="hotspot" xml:id="facs_pag3-lb22-del12"/> <!-- Cancellatura riga 22 -->
+                <zone ulx="18" uly="719" lrx="123" lry="740" rendition="hotspot" xml:id="facs_pag3-lb22-add11"/> <!-- Aggiunta (prima) su cancellatura riga 22 -->
+                <zone ulx="128" uly="714" lrx="190" lry="732" rendition="hotspot" xml:id="facs_pag3-lb22-add12"/> <!-- Aggiunta (seconda) su cancellatura riga 22 -->
+                <zone ulx="365" uly="711" lrx="440" lry="719" rendition="hotspot" xml:id="facs_pag3-lb22-add13"/> <!-- Aggiunta riga 22 -->
+                <zone ulx="271" uly="743" lrx="366" lry="757" rendition="hotspot" xml:id="facs_pag3-lb23-add14"/> <!-- Aggiunta riga 23 la premblent -->
+                <zone ulx="317" uly="755" lrx="388" lry="773" rendition="hotspot" xml:id="facs_pag3-lb23-del13"/> <!-- Cancellatura riga 23 -->
+                <zone ulx="378" uly="741" lrx="422" lry="757" rendition="hotspot" xml:id="facs_pag3-lb23-add15"/> <!-- Aggiunta riga 23 termes dopo 2 -->
+                            
+            </surface>
+
+            <!-- Retro pagina 3 -->
+            <surface n="3" xml:id="retro_pagina_seconda">
+                <graphic url='retropagina.png' width='500.333334px' height='800.333334px' />
+                <zone ulx="6" uly="14" lrx="486" lry="789" rendition="page" />
+            </surface>
+        </surfaceGrp>
+
+        <!-- Pagina extra, sottostante-->
+        <surface n="4" xml:id="pagina_extra">
+            <graphic url='extra.png' width='500px' height='800px' />
+            <zone ulx="29" uly="9" lrx="496" lry="742" rendition="page" />
+        </surface>
+
+    </facsimile>
+
+    <!-- INIZIO TESTO !-->
+    <text subtype="manuscript" > 
+        <!-- Codifica e traduzione in italiano delle due pagine -->
+        <group> 
+            <!-- Codifica di pagina 2 e 3 -->
+            <group xml:id="fr_prolusioni3"> 
+                <!--Codifica del testo di pagina 2 -->
+                <text xml:id="fr_pag-2"> <!-- Pagina 2 -->
+                    <body xml:lang="fr"> 
+                        <!-- Inizio pagina 2-->
+                        <pb n="2" facs="pagina2.png" xml:id="pagina_2"/>
+                        <!-- Numero impaginazione -->
+                        <ab> <fw type="pageNum" xml:id="hand-page-n-2" rend="align(left)" facs="#facs_hand-page-number-2"> 2 </fw> </ab> 
+                        <div xml:id="div_pag2">
+                            <!-- Prima pericope -->
+                            <ab xml:id="pericope_91Caac0001" n="1" xml:lang="fr" facs="#facs_pericope-1-pag2" corresp="it_91Caac0001"> 
+                                <!-- Riga 1 -->
+                                <lb xml:id="lb1-p2" n="1" facs="#facs_pag2-lb1"/>
+                                que si on supprime 
+                                <subst hand="#FdS"> 
+                                    <del rend="parteased" facs="#facs_pag2-lb1-del1" resp="#AT" cert="medium">une</del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb1-add1" >la</add>
+                                </subst>
+                                <term ref="#langue">langue </term> d’un
+                                <!-- Riga 2 -->
+                                <lb xml:id="lb2-p2" n="2" facs="#facs_pag2-lb2" />
+                                <term ref="#peuple">peuple </term> en lui <del rend="overstrike" facs="#facs_pag2-lb2-del2" > <gap atLeast="3" atMost="5" unit="chars" reason="illegible"/> </del> 
+                                en imposant une 
+                                <!-- Riga 3 -->
+                                <lb xml:id="lb3-p2" n="3" facs="#facs_pag2-lb3" />
+                                autre, cette autre <term ref="#langue">langue</term> 
+                                <subst hand="#FdS">    
+                                    <del rend="overstrike" facs="#facs_pag2-lb3-del3" > <unclear reason="parteased" cert="high" resp="#AT"> est toute aussi </unclear> </del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb3-add2" > se 
+                                        <choice> 
+                                            <abbr> <unclear reason="illegible" cert="low" resp="#AT"> trou </unclear> </abbr> 
+                                            <expan> <ex>trou</ex>ve </expan> 
+                                        </choice>
+                                        <choice>
+                                            <abbr><unclear reason="illegible" cert="low" resp="#AT">ete</unclear> </abbr>
+                                            <expan> <ex>êt</ex>re </expan>
+                                        </choice>
+                                        <del><gap reason="deleted" atLeast="8" atMost="9" unit="chars"> </gap> </del> 
+                                    </add>
+                                </subst>
+                                <!-- Riga 4 -->
+                                <lb xml:id="lb4-p2" n="4" facs="#facs_pag2-lb4" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb4-add3"> <term ref="#naturellement">naturellement </term> juste </add> aussi ancienne que celle qui vient d’être 
+                                <!-- Riga 5 -->
+                                <lb xml:id="lb5-p2" n="5" facs="#facs_pag2-lb5" />
+                                abolie, de manière qu’il ne peut jamais 
+                                <!-- Riga 6 -->
+                                <lb xml:id="lb6-p2" n="6" facs="#facs_pag2-lb6" />
+                                y avoir 
+                                <add hand="#FdS" place="above" facs="#facs_pag2-lb6-add4" > 
+                                    <choice>
+                                        <sic> surleglobe </sic>
+                                        <corr> sur le globe </corr>       
+                                    </choice>
+                                </add>
+                                que <term ref="#continuation"> continuation </term> d’un <term ref="#idiome">idiome</term>
+                                <!-- Riga 7 -->
+                                <lb xml:id="lb7-p2" n="7" facs="#facs_pag2-lb7" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb7-add5">
+                                    <choice >
+                                        <abbr type="contraction"> existt </abbr>
+                                        <expan>exist<ex>ant</ex></expan>
+                                    </choice> 
+                                </add>
+                                <subst hand="#FdS">
+                                    <del rend="overstrike" facs="#facs_pag2-lb7-del4" > <unclear reason="parteased" cert="high" resp="#AT"> anterieur </unclear> </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb7-add6" > la veille </add>,
+                                </subst>
+                                <!-- Testo ripetuto -->
+                                et toujours <surplus reason="repeted">et toujour</surplus>
+                                <!-- Riga 8 -->
+                                <lb xml:id="lb8-p2" n="8" facs="#facs_pag2-lb8"/>
+                                    <del rend="overstrike" facs="#facs_pag2-lb8-del5" > 
+                                        <subst>
+                                            <del rend="overstrike"> <unclear reason="deleted" cert="high" resp="#AT"> anterieur </unclear></del>
+                                            <add hand="#FdS" place="above"> <del rend="overstrike"> <unclear reason="deleted" cert="medium" resp="#AT">existt</unclear> </del> </add>
+                                        </subst>
+                                        <del rend="overstrike"> <unclear reason="deleted" cert="high">jusqu’à la nuit des ages </unclear></del>
+                                    </del> 
+                                <!-- Riga 9 -->
+                                <lb xml:id="lb9-p2" n="9" facs="#facs_pag2-lb9" /> 
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb9-add7">
+                                    <choice>
+                                        <abbr> existt </abbr>
+                                        <expan>exist<ex>ant</ex></expan>
+                                    </choice> 
+                                </add>
+                                <del rend="overstrike" facs="#facs_pag2-lb9-del6" > <unclear reason="deleted" cert="low" resp="#AT"> préhistorique </unclear></del>
+                                la veille, jusqu’à 
+                                <add hand="#FdS" facs="#facs_pag2-lb9-add8" place="above" > 
+                                    <choice> 
+                                        <sic>cequ’</sic>
+                                        <corr> ce qu' </corr>
+                                    </choice> 
+                                    on arrive à 
+                                </add>la nuit
+                                <!-- Riga 10 -->
+                                <lb xml:id="lb10-p2" n="10" facs="#facs_pag2-lb10" /> 
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-add9">insondable </add> 
+                                des âges 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb10-del7"> <gap atLeast="8" atMost="10" unit="chars" reason="deleted">  </gap> </del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb10-add10">décidément</add> 
+                                </subst>
+                                <term ref="#antehistorique"> antéhistoriques</term>
+                            </ab>
+                            <!-- Fine prima pericope -->
+
+                            <!-- Seconda pericope -->
+                            <ab xml:id="pericope_91Caac0002" n="2" xml:lang="fr" facs="#facs_pericope-2-pag2" corresp="it_91Caac0002"> 
+                                <!-- Riga 11 -->
+                                <lb xml:id="lb11-p2" n="11" facs="#facs_pag2-lb11" />
+                                Je rappellerais 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb11-del8"> <gap atLeast="3" atMost="4" unit="words" reason="deleted"> </gap> </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb11-add11"> surtout </add>
+                                </subst>,
+                                toujours 
+                                <!-- Riga 12 -->
+                                <lb xml:id="lb12-p2" n="12" facs="#facs_pag2-lb12" />
+                                dans le même ordre d’idées, qu’il n’arrive 
+                                <!-- Riga 13 -->
+                                <lb xml:id="lb13-p2" n="13" facs="#facs_pag2-lb13" />
+                                jamais qu’une   
+                                <emph rend="underline"><term ref="#langue">langue</term> succède à une </emph> 
+                                <!-- Riga 14 -->
+                                <lb xml:id="lb14-p2" n="14" facs="#facs_pag2-lb14" />
+                                <emph rend="underline"> autre </emph>; 
+                            </ab>
+                            <!-- Fine seconda pericope-->
+
+                            <!-- Terza pericope -->
+                            <ab xml:id="pericope_91Caac0003" n="3" xml:lang="fr" facs="#facs_pericope-3-pag2" corresp="it_91Caac0003">
+                                <!-- Riga 14 continuazione -->
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb14-15-16-del9"> <unclear reason="deleted" cert="hing" resp="#AT"> par example que le <emph rend="underline">français</emph> succède </unclear> </del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb14-add12">par 
+                                        <choice> 
+                                            <abbr>ex. </abbr>
+                                            <expan>ex<ex>emple</ex></expan>
+                                        </choice> 
+                                        que le <emph rend="underline"> <lang xml:id="glott-1">français</lang> </emph> succède au <emph rend="underline" ><lang xml:id="glott-2">latin</lang></emph> ;
+                                    </add>
+                                </subst>
+                                <!-- Riga 15 -->
+                                <lb xml:id="lb15-p2" n="15" facs="#facs_pag2-lb15"/>
+                                <del rend="overstrike" facs="#facs_pag2-lb14-15-16-del9"> <unclear reason="deleted" cert="high" resp="#AT">au <emph rend="underline">latin</emph>; mais que cette succession de <num type="caridinal" value="2">2 </num> </unclear></del>
+                                <!-- Riga 16-->
+                                <lb xml:id="lb16-p2" n="16" facs="#facs_pag2-lb16" />
+                                <del rend="overstrike" facs="#facs_pag2-lb14-15-16-del9"> <unclear reason="deleted" cert="#high" resp="#AT">entités conventionelles mais que cettes </unclear></del>
+                            </ab>
+                            <!-- Fine terza pericope -->
+
+                            <!-- Quarta pericope --> 
+                            <ab xml:id="pericope_91Caac0004" n="4" xml:lang="fr" facs="#facs_pericope-4-pag2" corresp="it_91Caac0004">
+                                <!-- Riga 17 -->
+                                <lb xml:id="lb17-pag2" n="17" facs="#facs_pag2-lb17" /> 
+                                mais que cette <term ref="#succession">succession</term> imaginaire 
+                                <add hand="#FdS" place="above" facs="#facs_pag2-lb17-add13" >de 
+                                    <choice>
+                                        <orig>2 </orig> 
+                                        <reg><num type="cardinal" value="2"> deux </num></reg>
+                                    </choice>
+                                    <term ref="#chose">choses </term>
+                                </add> vient 
+                                <!-- Riga 18 -->
+                                <lb xml:id="lb18-pag2" n="18" facs="#facs_pag2-lb18" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb18-add14">
+                                    <choice>
+                                        <abbr type="contracrion"> <unclear reason="illegible" cert="low"> uniq=r </unclear> </abbr>
+                                        <expan> uniq<ex>uement</ex> </expan>
+                                    </choice>
+                                </add> 
+                                de ce qu<del rend="overstrike"><unclear reason="parteased" cert="low" resp="#AT"> e </unclear> </del>’ 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb18-del10" > 
+                                        <del resp="#AT" cert="high"> nous </del> 
+                                        <del resp="#AT" cert="medium"> donnous </del> 
+                                    </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb18-add15">il nous plaît de donner </add>
+                                </subst>
+                                deux <term ref="#nom">noms</term> successifs 
+                                <!-- Riga 19 -->
+                                <lb xml:id="lb19-pag2" n="19" facs="#facs_pag2-lb19" />
+                                au même <term ref="#idiome">idiome </term>, et par conséquent d’en 
+                                <!-- Riga 20 -->
+                                <lb xml:id="lb20-pag2" n="20" facs="#facs_pag2-lb20" />
+                                faire <term ref="#arbitrairement">arbitrairement</term> 
+                                <choice> 
+                                    <orig> 2</orig> 
+                                    <reg><num type="cardinal" value="2" >deux</num></reg>
+                                </choice> 
+                                <term ref="#chose">choses </term> séparées 
+                                <choice> 
+                                    <abbr type="contraction">ds</abbr> 
+                                    <expan><ex>d</ex>an<ex>s</ex></expan> 
+                                </choice> 
+                                le <term ref="#temp">temps</term>.
+                            </ab>
+                            <!-- Fine quarta pericope -->
+
+                            <!-- Quinta pericope -->
+                            <ab xml:id="pericope_91Caac0005" n="5" xml_lang="fr" facs="facs_pericope-5-pag2" corresp="it_91Caac0005">
+                                <!-- Riga 21 -->
+                                <lb xml:id="lb21-pag2" n="21" facs="#facs_pag2-lb21" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb21-add16">Sans doute,</add> 
+                                <choice resp="#B_E">
+                                    <sic>L’</sic>
+                                    <corr>l’</corr>
+                                </choice>
+                                influence qu’
+                                <choice resp="#B_E">
+                                    <sic><unclear reason="parteased" cert="medium" resp="#AT">exerce<del rend="overstrike">n </del></unclear></sic>
+                                    <corr >exercent </corr>
+                                </choice>
+                                sur notre <term ref="#esprit">esprit </term>
+                                <!-- Riga 22 -->
+                                <lb xml:id="lb22-pag2" n="22" facs="#facs_pag2-lb22" />
+                                deux <term ref="#nom">noms</term> successifs de ce genre est <del rend="overstrike"  facs="#facs_pag2-lb22-del11" ><gap atLeast="2" atMost="3" unit="chars" reason="deleted"> </gap> </del> 
+                                <!-- Riga 23 -->
+                                <lb xml:id="lb23-pag2" n="23" facs="#facs_pag2-lb23" />
+                                tellement décisive et <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add17" >tellement <unclear reason="illegible" resp="#B_E">inébranlable</unclear> </add>, 
+                                indéracinable, que 
+                                <!-- Riga 24 -->
+                                <lb xml:id="lb24-pag2" n="24" facs="#facs_pag2-lb24" />
+                                je ne songe pas, 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb24-del12" > <unclear reason="deleted" cert="high" resp="#AT">à l'</unclear> <gap atLeast="7" atMost="8" unit="chars" reason="deleted"></gap> <unclear reason="deleted" cert="high" resp="#AT">la</unclear> </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add18" >je 
+                                        <choice>
+                                            <abbr type="contraction">vs</abbr>
+                                            <expan> <ex>v</ex>ou<ex>s</ex> </expan>
+                                        </choice>
+                                        l’avoue franchement, à 
+                                    </add>
+                                </subst>
+                                détruire 
+                                <!-- Riga 25 -->
+                                <lb xml:id="lb25-pag2" n="25" facs="#facs_pag2-lb25" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag2-lb23-add19">votre préjugé </add> en quelques jours par deux ou trois 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag2-lb25-del13" > <gap atLeast="4" atMost="5" unit="chars" reason="deleted"> </gap> </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add20" >remarques</add> 
+                                </subst>
+                                <!-- Riga 26 -->
+                                <lb xml:id="lb26-pag2" n="26" facs="#facs_pag2-lb26" break="no" />
+                                    <del rend="overstrike" facs="#facs_pag2-lb26-del14" > <unclear reason="deleted" cert="low" resp="#AT"> sematins</unclear> </del> <!-- da rivedere -->
+                                    <subst>
+                                        <del rend="overstrike" facs="#facs_pag2-lb26-del15" > le <gap atLeast="9" atMost="11" unit="chars" reason="illegible"></gap></del>
+                                        <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add21" >de ma part. </add>
+                                    </subst>
+                            </ab>
+                            <!-- Fine quinta pericope -->
+
+                            <!-- Sesta pericope - finisce nella pagina seguente -->
+                            <ab xml:id="pericope_91Caac0006a" n="6" xml:lang="fr" facs="#facs_pericope-6a-pag2" corresp="it_91Caac0006">
+                                Ce n’est que pas
+                                <!-- Riga 27 -->
+                                <lb xml:id="lb27-pag2" n="27" facs="#facs_pag2-lb27" />
+                                <choice>
+                                    <sic>T</sic>
+                                    <corr resp="#B_E">t</corr>
+                                </choice>
+                                ous les <unclear reason="illegible" resp="#B_E" cert="high"> <term ref="#linguiste">linguistes</term> le savent </unclear>
+                            </ab>
+                        </div>
+                    </body>
+                </text>
+
+                <!-- Codifica del testo di pagina 3 -->
+                <text xml:id="fr_pag-3"> <!-- Pagina 3 -->
+                    <body xml:lang="fr">
+                        <!-- Inizio pagina -->
+                        <pb n="3" facs="pagina3.png" xml:id="pagina_3"/>
+                        <ab> <fw type="pageNum" xml:id="hand-page-n-3" rend="align(left)" facs="#facs_hand-page-number-3"> 2 </fw> </ab> 
+                        <div xml:id="div_pag3">
+                            <!-- Continuazione pericope 6, cominciata nella pagina precedente -->
+                            <ab xml:id="pericope_91Caac0006b" n="6" xml:lang="fr" facs="#facs_pericope-6b-pag3" corresp="#pericope_91Caac0006a it_91Caac0006"> 
+                                <!-- Riga 1 -->
+                                <lb xml_id="lb1-pag3" n="1" facs="#facs_pag3-lb1" />
+                                <del rend="overstrike" facs="#facs_pag3-lb1-del1">L'observation <gap atLeast="3" atMost="4" unit="chars" reason="deleted" ></gap> à fait </del>
+                                <!-- Riga 2 -->
+                                <lb xml_id="lb2-pag3" n="2" facs="#facs_pag3-lb2" />
+                                <del rend="overstrike" facs="#facs_pag3-lb1-del2"> <unclear reason="parteased" cert="high" resp="#AT">La lecture est </unclear> </del >
+                                <term ref="#observation">l’observation</term> <add hand="#FdS" place="above" facs="#facs_pag3-lb2-add1">particulièrement</add> 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag3-lb2-del3"><unclear reason="deleted" cert="low" resp="#AT"> in cessante </unclear></del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag3-lb2-add2"> prolongée </add>
+                                </subst>
+                                <!-- Riga 3 -->
+                                <lb xml_id="lb3-pag3" n="3" facs="#facs_pag3-lb3" />
+                                de ce <del hand="#FdS" rend="overstrike" facs="#facs_pag3-lb3-del4"><unclear reason="deleted" cert="high" resp="#AT"> qui se passe de</unclear> </del> qu’est la <term ref="#langue">langue</term> 
+                                <!-- Riga 4 -->
+                                <lb xml_id="lb4-pag3" n="4" facs="#facs_pag3-lb4" />
+                                de <term ref="#texte">texte</term> en <term ref="#texte">texte</term>, de 
+                                <choice>
+                                    <orig> 50 </orig>
+                                    <reg> <num type="cardinal" value="50">cinquante </num></reg>
+                                </choice> 
+                                ans en 
+                                <!-- Riga 5 -->
+                                <lb xml_id="lb5-pag3" n="5" facs="#facs_pag3-lb5" />
+                                <choice>
+                                    <orig> 50 </orig>
+                                    <reg> <num type="cardinal" value="50">cinquante </num></reg>
+                                </choice> 
+                                ans, ou de 
+                                <choice>
+                                    <orig> 20 </orig>
+                                    <reg> <num type="cardinal" value="20">vingt </num></reg>
+                                </choice> 
+                                ans en                                 
+                                <choice>
+                                    <orig> 20 </orig>
+                                    <reg> <num type="cardinal" value="20">vingt </num></reg>
+                                </choice>  
+                                ans, qu’on 
+                                <!-- Riga 6 -->
+                                <lb xml_id="lb6-pag3" n="6" facs="#facs_pag3-lb6" />
+                                arrive enfin à se pénétrer soi-même
+                                <!-- Riga 7 -->
+                                <lb xml_id="lb7-pag3" n="7" facs="#facs_pag3-lb7" />
+                                profondément <add hand="#FdS" place="above" facs="#facs_pag3-lb7-add3"><unclear reason="illegible" resp="#B_E" cert="high">définitivement</unclear></add> de l’<term ref="#absolue">absolue</term> <term ref="#vanite">vanité </term>
+                                <!-- Riga 8 -->
+                                <lb xml_id="lb8-pag3" n="8" facs="#facs_pag3-lb8" />
+                                <add hand="#FdS" place="margin left" facs="#facs_pag3-lb8-add4"> et <term ref="#inanite">inanité</term></add> d’une <term ref="#denomination">dénomination</term> <term ref="#differente">différente</term> comme
+                                <!-- Riga 9 -->
+                                <lb xml:id="lb9-pag3" n="9" facs="#facs_pag3-lb9"/>    
+                                <emph rend="underline"> <lang xml:id="glott-3" >latin </lang> </emph>
+                                ou <emph rend="underline"> <lang xml:id="glott-4">français </lang></emph>. -
+                            </ab>
+                            <!-- Fine sesta pericope -->
+
+                            <!-- Settima pericope -->
+                            <ab xml:id="pericope_91Caac0007" n="7" xml:lang="fr" facs="#facs_pericope-7-pag3" corresp="it_91Caac0007">
+                                Qu’arrive-t-il 
+                                <!-- Riga 10 -->
+                                <lb xml:id="lb10-pag3" n="10" facs="#facs_pag3-lb10" />
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag3-lb10-del5"><gap atLeast="10" atMost="11" unit="chars" reason="deleted"></gap></del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag3-lb10-add5"><unclear reason="illegible" resp="#B_E" cert="high"><term ref="#invariablement">invariablement</term></unclear></add>
+                                </subst>
+                                quand un <term ref="#linguiste">linguiste</term> <add hand="#FdS" place="above" facs="#facs_pag3-lb10-add6">vient</add> combattre 
+                                <!-- Riga 11 -->
+                                <lb xml:id="lb11-pag3" n="11" facs="#facs_pag3-lb11" />
+                                l’<term ref="#idee">idée</term> <del rend="overstrike" facs="#facs_pag3-lb11-del6"><unclear reason="deleted" resp="#AT" cert="medium"> que </unclear></del> 
+                                <subst>
+                                    <del rend="overstike" facs="#facs_pag3-lb11-del7"> <unclear reason="deleted" resp="#AT" cert="high"> fantastique </unclear> </del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag3-lb11-add7">erronée</add>
+                                </subst>
+                                que la <term ref="#langue_latine"> <lang xml:id="glott-5"> langue latine </lang></term> <!-- Per comodità e evitare di annidare tag distinti, latine, che dovrebbe essere la prima parola della riga 12, è stata spostata come ultima della riga 11 -->
+                                <!-- Riga 12 -->
+                                <lb xml:id="lb12-pag3" n="12" facs="#facs_pag3-lb12" />  
+                                aurait un jour <emph rend="underline">enfanté</emph> 
+                                <!-- Riga 13 -->
+                                <lb xml:id="lb13-pag3" n="13" facs="#facs_pag3-lb13" />
+                                le <lang xml:id="glott-6">français </lang> ?
+                            </ab>
+                            <!-- Fine settima pericope -->
+
+                            <!-- Ottava pericope -->    
+                            <ab xml:id="pericope_91Caac0008" n="8" xml:lang="fr" facs="#facs_pericope-8-pag3" corresp="it_91Caac0008">
+                                <add hand="#FdS" place="above" facs="#facs_pag3-lb13-add8">Mon Dieu </add> 
+                                <choice>
+                                    <sic>On </sic> 
+                                    <corr resp="#B_E">on</corr>
+                                </choice> abonde dans tous 
+                                <!-- Riga 14 -->
+                                <lb xml:id="lb14-pag3" n="14" facs="#facs_pag3-lb14"/>
+                                <term ref="#sens">sens</term>, on convient que cela est une 
+                                <!-- Riga 15 -->
+                                <lb xml:id="lb15-pag3" n="15" facs="#facs_pag3-lb15"/>
+                                <term ref="#conception">conception</term> <term ref="#absurde">absurde </term>, on sait que
+                                <!-- Riga 16 -->
+                                <lb xml:id="lb16-pag3" n="16" facs="#facs_pag3-lb16"/>
+                                partout et toujours <quote xml:lang="latin" source="https://www.treccani.it/vocabolario/natura-non-facit-saltus/"><emph rend="underline"><term ref="#natura_non_facit_saltus">natura non facit </term> </emph> </quote>
+                                <!-- Riga 17 -->
+                                <lb xml:id="lb17-pag3" n="17" facs="#facs_pag3-lb17" /> 
+                                <quote xml:lang="latin" source="https://www.treccani.it/vocabolario/natura-non-facit-saltus/"><emph rend="underline"> <term ref="#natura_non_facit_saltus">saltus </term></emph> </quote>, on est parfaitement convain-
+                                <!-- Riga 18 -->
+                                <lb xml:id="lb18-pag3" n="18" facs="#facs_pag3-lb18" break="no" />
+                                cu qu’une <term ref="#transition">transition</term> très lente a dû 
+                                <!-- Riga 19 -->
+                                <lb xml:id="lb19-pag3" n="19" facs="#facs_pag3-lb19" />
+                                s’accomplir <del rend="overstrike" facs="#facs_pag3-lb19-del8"><gap reason="illegible"> </gap></del> 
+                                <emph rend="underline">entre les 
+                                    <choice>
+                                        <orig> 2 </orig>
+                                        <reg> <num type="cardinal" value="2"> deux </num></reg>
+                                    </choice>
+                                    <choice> 
+                                        <abbr> langs </abbr>
+                                        <expan > <term ref="#langue"><ex>lang</ex>ues</term> </expan>
+                                    </choice> 
+                                </emph> 
+                                <!-- Riga 20 -->
+                                <lb xml:id="lb20-pag3" n="20" facs="#facs_pag3-lb20" />
+                                <add hand="#FdS" place="above" facs="#facs_pag3-lb20-add9">
+                                    <emph> (remarques ce <unclear reason="illegible" resp="#B_E" cert="high"> <term ref="#terme">terme</term> </unclear>) 
+                                    </emph>
+                                </add>
+                            </ab>
+                            <!-- Fine ottava pericope -->
+
+                            <!-- Nona pericope -->
+                            <ab xml:id="pericope_91Caac0009" n="9" xml:lang="fr" facs="#facs_pericope-9-pag3" corresp="it_91Caac0009">
+                                <!-- Continuazione riga 20-->
+                                et après cela, 
+                                <del rend="overstrike" facs="#facs_pag3-lb20-del9"> 
+                                    <unclear reason="deleted" cert="high" resp="#AT"> on de' </unclear> 
+                                    <gap atLeast="4" atMost="6" reason="deleted"></gap> 
+                                    <unclear reason="deleted" cert="high" resp="#AT"> le linguiste</unclear> 
+                                </del> 
+                                <!-- Riga 21 -->
+                                <lb xml:id="lb21-pag3" n="21" facs="#facs_pag3-lb21" />
+                                <del rend="overstrike" facs="#facs_pag3-lb21-del10"><unclear reason="deleted" cert="low" resp="#AT"> de'course,</unclear></del>
+                                <subst>
+                                    <del rend="overstrike" facs="facs_pag3-lb21-del11"><unclear reason="deleted" cert="low" resp="#AT"> on </unclear> <unclear reason="deleted" cert="high" resp="#AT"> n'est pas</unclear> </del> 
+                                    <add hand="#FdS" place="above" facs="#facs_pag3-lb21-add10"> est-on</add> 
+                                </subst>
+                                plus avancé 
+                                <!-- Riga 22 -->
+                                <lb xml:id="lb22-pag3" n="22" facs="#facs_pag3-lb22" />
+                                <subst> 
+                                    <del rend="overstrike" facs="#facs_pag3-lb22-del12" ><unclear reason="deleted" cert="high" resp="#AT"> qu'avant </unclear></del>
+                                    <add hand="#FdS" place="above" facs="facs_pag3-lb22-add11"> qu’auparavant ?</add>
+                                </subst>
+                            </ab>
+                            <!-- Fine nona pericope -->
+
+                            <!-- Decima pericope -->
+                            <ab xml:id="pericope_91Caac0010" n="10" xml:lang="fr" facs="#facs_pericope-9-pag3">
+                                <add hand="#FdS" place="above" facs="#facs_pag3-lb22-add12">Nullement</add>, parce qu’on persiste 
+                                <add hand="#FdS" place="above" facs="#facs_pag3-lb22-add13"> 
+                                    <choice>
+                                        <abbr type="contraction">opiniatr</abbr>
+                                        <expan><ex>opiniâtr</ex>ement</expan>
+                                    </choice>
+                                </add> à se 
+                                <!-- Riga 23 -->
+                                <lb xml:id="lb23-pag3" n="23" facs="#facs_pag3-lb23" />
+                                figurer qu’ <emph rend="underline">il y a <add and="#FdS" place="above" facs="#facs_pag3-lb22-add14">là <unclear reason="illegible" resp="#B_E" cert="#high"><term ref="#prealablement">préalablement</term> </unclear></add> 
+                                <choice>
+                                    <orig> 2 </orig>
+                                    <reg> <num type="cardinal" value="2">deux </num></reg>
+                                </choice> 
+                                <subst>
+                                    <del rend="overstrike" facs="#facs_pag3-lb22-del13"><unclear reason="parteased" cert="medium" resp="#AT">langues </unclear></del>
+                                    <add hand="#FdS" place="above" facs="#facs_pag3-lb22-add15"><term ref="#terme">termes</term></add>
+                                </subst>
+                                </emph> reliés 
+                                <!-- Riga 24 -->
+                                <lb xml:id="lb24-pag3" n="24" facs="#facs_pag3-lb24" />
+                                il est vrai par 
+                                <choice>
+                                    <orig> 1 </orig>
+                                    <reg> <num type="cardinal" value="1">une </num></reg>
+                                </choice> 
+                                <term ref="#transition">transition</term> <term ref="#insensible">insensible</term>.
+                            </ab>
+                            <!-- Fine decima pericope -->
+                        </div>
+                    </body>
+                </text>
+
+                <!-- Retro pagina 3 - Pag. vuota -->
+                <text xml:id="fr_pag-4">
+                    <pb n="4" facs="pagina3.png" xml:id="retro_pagina_seconda"/>
+                </text>
+
+            </group>
+
+            <!-- Traduzione italiana  di pagina 2 e 3-->
+            <group xml:id="it_prolusioni3" xml:lang="It">
+                <!-- Traduzione in italiano di pagina 2 -->
+                <text xml:id="it_prolusioni3-pag2">
+                    <body source="#Fadda2006" resp="#EF">
+                        <!-- Pericope 1 -->
+                        <ab xml_id="it_91Caac0001" corresp="#pericope_91Caac0001" n="1" xml:lang="It"> 
+                            che se si sopprime la lingua di un 
+                            popolo imponendogliene un’altra, 
+                            quest’ultima si trova ad essere, 
+                            naturalmente, altrettanto antica di quella che è appena stata 
+                            abolita, in modo che non può mai 
+                            esserci sul pianeta che continuazione di una lingua 
+                            esistente il giorno prima, 
+                            e sempre esistente il giorno prima, fino a dove arriva la notte 
+                            insondabile delle età assolutamente preistoriche.
+                        </ab>
+
+                        <!-- Pericope 2 -->
+                        <ab xml_id="it_91Caac0002" corresp="#pericope_91Caac0002" n="2" xml:lang="It"> 
+                            Ricorderò soprattutto, sempre 
+                            nello stesso ordine di idee, che non succede 
+                            mai che una <hi rend="italic">lingua succeda a 
+                            un’altra</hi>;
+                        </ab>   
+
+                        <!-- Pericope 3 -->
+                        <ab xml_id="it_91Caac0003" corresp="#pericope_91Caac0003" n="3" xml:lang="It"> 
+                            per esempio che il <hi rend="italic">francese</hi> succeda al latino;
+                        </ab> 
+
+                        <!-- Pericope 4 -->
+                        <ab xml_id="it_91Caac0004" corresp="#pericope_91Caac0004" n="4" xml:lang="It"> 
+                            ma che questa successione immaginaria di due cose viene 
+                            unicamente dal fatto che ci aggrada dare due nomi successivi 
+                            allo stesso idioma, e di conseguenza di 
+                            farne arbitrariamente due cose separate nel tempo.
+                        </ab> 
+
+                        <!-- Pericope 5 -->
+                        <ab xml_id="it_91Caac0005" corresp="#pericope_91Caac0005" n="5" xml:lang="It"> 
+                            Senza dubbio, l’influenza che esercitano sulla nostra mente 
+                            due nomi successivi di questo genere è
+                            talmente decisiva e talmente irremovibile, inestirpabile, che 
+                            non ho la minima aspettativa nemmeno, ve lo confesso con franchezza, di distruggere 
+                            il vostro pregiudizio in qualche giorno con due o tre osservazioni mie.
+                        </ab> 
+
+                        <!-- Pericope 6 -->
+                        <ab xml_id="it_91Caac0006" corresp="pericope_91Caac0006a" n="6" xml:lang="It"> 
+                            È solo – 
+                            tutti i linguisti lo sanno –
+                        </ab> 
+                    </body>
+
+                </text>
+
+                <!-- Traduzione in italiano di pagina 3 -->
+                <text xml:id="it_prolusioni3-pag3"> 
+                    <body source="#Fadda2006" resp="#EF">
+                        <!-- Continuazione Pericope 6 -->
+                        <ab xml_id="it_91Caac0006" corresp="#pericope_91Caac0006b" n="6" xml:lang="It"> 
+                            attraverso l’osservazione particolarmente prolungata 
+                            di ciò che la lingua è 
+                            di testo in testo, di cinquant’anni in
+                            cinquant’anni, o di vent’anni in vent’anni, che 
+                            si arriva finalmente a convincersi 
+                            profondamente, definitivamente, dell’assoluta vanità 
+                            e inanità di una denominazione differente come 
+                            <hi rend="italic">latino</hi> o <hi rend="italic">francese </hi>.
+                        </ab>
+
+                        <!-- Pericope 7 -->
+                        <ab xml_id="it_91Caac0007" corresp="#pericope_91Caac0007" n="7" xml:lang="It"> 
+                            Che accade, invariabilmente, 
+                            quando un linguista si mette contro
+                            l’idea sbagliata che la lingua 
+                            latina avrebbe un giorno <hi rend="italic">partorito</hi> il francese?
+                        </ab>
+
+                        <!-- Pericope 8 -->
+                        <ab xml_id="it_91Caac0008" corresp="#pericope_91Caac0008" n="8" xml:lang="It"> 
+                            Mio Dio, si abbonda in tutti i 
+                            sensi, si conviene che questa è una
+                            concezione assurda, si sa che 
+                            sempre e dovunque <hi rend="italic">natura non facit 
+                            saltus</hi>, si è perfettamente convinti
+                            che una transizione molto lenta ha dovuto 
+                            compiersi tra <hi rend="italic">le due lingue</hi>
+                            – occhio a questo <hi rend="italic">termine</hi>!
+                        </ab>
+
+                        <!-- Pericope 9 -->
+                        <ab xml_id="it_91Caac0009" corresp="#pericope_91Caac0009" n="9" xml:lang="It"> 
+                            – e dopo tutto
+                            questo, si è fatto qualche passo avanti     
+                            rispetto a prima?
+                        </ab>
+
+                        <!-- Pericope 10 -->
+                        <ab xml_id="it_91Caac0010" corresp="#pericope_91Caac0010" n="10" xml:lang="It">
+                            Proprio per nulla, perché si persiste ostinatamente a 
+                            figurarsi che vi sono due termini già dati, uniti, 
+                            certamente, da una transizione insensibile,
+                        </ab>
+
+                    </body>
+                </text>
+            </group>
+        </group>
+
+        <back>
+            <div>
+                
+                <!-- Bibliografia -->
+                <listBibl xml:id="prolusioni3-bibliography">
+                    <head>Bibliografia</head>
+                    
+                    <!--Bouquet-Engler 2002-->
+                    <bibl xml:id="Bouquet-Engler2002" source="https://www.worldcat.org/it/title/1136488186" > 
+                        <title>Écrits de linguistique générale</title>
+                        <author>
+                            <persName ref="#FdS">
+                                <forename>Ferdinand</forename> 
+                                <surname>de Saussure</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName ref="#SB">
+                                <forename>Simon</forename>
+                                <surname>Bouquet</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName ref="#RE">
+                                <forename>Rudolf</forename>
+                                <surname>Engler</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName ref="#AW">
+                                <forename>Antoinette</forename>
+                                <surname>Weil</surname>
+                            </persName>
+                        </author>
+                        <date when="2002">2002</date>
+                        <publisher>Gallimard</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <idno type="ISSN">0302-5160</idno>
+                        <note>
+                            Trascrizione francese del manoscritto
+                        </note>
+                    </bibl>
+
+
+                    <!--E.Fadda 2006-->
+                    <bibl xml:id="Fadda2006" source="https://www.worldcat.org/it/title/878630533">
+                        <title type="main">Lingua e mente sociale.</title>
+                        <title type="sub">Per una teoria delle istituzioni linguistiche a partire da Saussure e Mead</title>
+                        <author>
+                            <persName ref="#EF">
+                                <forename>Emanuele</forename>
+                                <surname>Fadda</surname>
+                            </persName>
+                        </author>  
+                        <publisher>Bonanno Editore</publisher>
+                        <pubPlace>Acireale - Roma</pubPlace>
+                        <date when="2006"> 2006 </date>
+                        <idno type="ISBN">887796276-3</idno>
+                        <note>
+                            Trascrizione in italiano del manoscritto
+                        </note>
+                    </bibl>
+
+                   <!-- Chidichimo 2009 -->
+                    <bibl xml:id="Chidichimo-2009" source="https://www.jstor.org/stable/i40069704">
+                        <title>Cahiers Ferdinand de Saussure</title>
+                        <author>
+                            <persName>
+                                <forename>Alessandro</forename>
+                                <surname>Chidichimo</surname>
+                            </persName>
+                        </author>
+                        <date when="2009">2009</date>
+                        <pubPlace><placeName ref="#GE">Ginevra</placeName></pubPlace>
+                        <publisher>Librairie Droz</publisher>
+                        <idno type="ISSN">0068516X</idno>
+                    </bibl>
+
+                    <!-- Sassure - De Mauro 76 -->
+                    <bibl xml:id="DeMauro-1976" source="https://www.worldcat.org/it/title/1106929198">
+                        <title type="main">Corso di linguistica generale,</title>
+                        <title type="sub">introduzione, traduzione e commento di Tullio De Mauro</title>
+                        <author>
+                            <persName ref="#FDS">
+                                <forename>Ferdinand</forename>
+                                <surname>De Saussure</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName>
+                                <forename>Tullio</forename>
+                                <surname>De Mauro</surname>
+                            </persName>
+                        </author>
+                        <date when="1976">1976</date>
+                        <pubPlace><placeName ref="#RM">Roma</placeName></pubPlace>
+                        <pubPlace><placeName ref="#BA">Bari</placeName></pubPlace>
+                        <publisher>Laterza editore</publisher>
+                        <idno type="ASIN">B00DNED2D2</idno>
+                    </bibl>   
+                </listBibl>
+
+                <!-- Persone -->
+                <listPerson xml:id="prolusioni3-people">
+                    <head>Persone</head>
+                    
+                    <!--Ferdinand de Saussure-->
+                    <person xml:id="FdS" sameAs="https://viaf.org/viaf/95158205/ https://www.worldcat.org/identities/viaf-8291159248237604870007/"> 
+                        <persName role="author">
+                            <forename>Ferdinand</forename>
+                            <surname>de Saussure</surname>
+                        </persName>
+                        <occupation> linguista </occupation>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1857-11-26">26th November 1857</date>
+                            <placeName ref="#GE">
+                                <settlement type="municipality">Genève</settlement>
+                                <settlement type="department" key="GE">Genève</settlement>
+                                <country key="CH">Switzerland</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1913-02-22">22 Febbraio 1913</date>
+                            <placeName ref="#VlC">
+                                <settlement type="municipality">Vufflens-le-Château</settlement>
+                                <settlement type="canton" key="Vaud">Vaud</settlement>
+                                <country key="CH">Svizzera</country>
+                            </placeName>
+                        </death> 
+                    </person>
+
+                    <!--Angelo Mario Del Grosso-->
+                    <person xml:id="AMDG" sameAs="https://viaf.org/viaf/323148207835400342025"> 
+                        <persName> 
+                            <forename>Angelo</forename>
+                            <forename>Mario</forename>
+                            <surname>Del Grosso</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1980-02-19">19 Febbraio 1980</date>
+                            <placeName ref="#BN">
+                                <settlement type="municipality">Benevento</settlement>
+                                <settlement type="provincia" key="BN">Benevento</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                    </person>
+
+                    <!--Emanuele Fadda-->
+                    <person xml:id="EF" sameAs="http://viaf.org/viaf/101011384/ http://worldcat.org/identities/lccn-no2011183289/"> 
+                        <persName role="author"> 
+                            <forename>Emanuele</forename>
+                            <surname>Fadda</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                        <date when="1972">1972</date>
+                            <placeName ref="#CA">
+                                <settlement type="municipality">Cagliari</settlement>
+                                <settlement type="provincia" key="CA">Cagliari</settlement>
+                                <country key="IT">Italy</country>
+                            </placeName>
+                        </birth> 
+                    </person>
+
+                    <!--Simon Bouquet-->
+                    <person xml:id="SB" sameAs="http://viaf.org/viaf/100974817 https://www.worldcat.org/identities/lccn-n97102757/"> 
+                        <persName> 
+                            <forename>Simon</forename>
+                            <surname>Bouquet</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1954">1954</date>
+                        </birth> 
+                    </person>
+
+                    <!--Rudolf Engler-->
+                    <person xml:id="RE" sameAs="https://viaf.org/viaf/2500391/ http://worldcat.org/identities/lccn-nr89013033/"> 
+                        <persName role="author"> 
+                            <forename>Rudolf</forename>
+                            <surname>Engler</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1930-10-25">25 Ottobre 1930</date>
+                        </birth> 
+                    </person>
+
+                    <!--Antoinette Weil-->
+                    <person xml:id="AW" sameAs="http://worldcat.org/identities/lccn-nr2002015108/"> 
+                        <persName> 
+                            <forename>Antoinette</forename>
+                            <surname>Weil</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+
+                    <!--Alessandro Chidichimo-->
+                    <person xml:id="AC" sameAs="https://www.worldcat.org/wcidentities/viaf-8291159248237604870007">
+                        <persName> 
+                            <forename>Alessandro</forename>
+                            <surname>Chidichimo</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note> Chidichimo è il responsabile della datazione </note>
+                    </person>
+
+                    <!--Tullio De Mauro -->
+                    <person xml:id="TDM">
+                        <persName> 
+                            <forename>Tullio</forename>
+                            <surname>De Mauro</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+
+                    <!-- Arianna Tescari -->
+                    <person xml:id="AT">
+                        <persName> 
+                            <forename>Arianna</forename>
+                            <surname>Tescari</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="2000-02-15">15 Febbraio 2000</date>
+                        </birth> 
+                    </person>
+                </listPerson>
+
+                <!-- Luoghi -->
+                <listPlace xml:id="prolusioni3-places"> 
+                    <head>Luoghi</head>
+                    
+                    <!--Ginevra-->
+                    <place xml:id="GE">
+                        <placeName ref="https://www.geonames.org/2660646/geneve.html https://www.treccani.it/enciclopedia/ginevra/">Genève</placeName>
+                        <country key="CH">Svizzera</country>
+                    </place>
+
+                    <!--Benevento-->
+                    <place xml:id="BN">
+                        <placeName ref="https://www.geonames.org/3182179/benevento.html https://www.treccani.it/enciclopedia/benevento/">Benevento</placeName>
+                        <country key="IT">Italia</country>
+                    </place>
+
+                    <!-- Cagliari -->
+                    <place xml:id="CA">
+                        <placeName ref="https://www.geonames.org/2524907/cagliari.html https://www.treccani.it/enciclopedia/cagliari/">Cagliari</placeName>
+                        <country key="IT">Italia</country>
+                    </place>
+
+                    <!-- Roma -->
+                    <place xml:id="RM">
+                        <placeName ref="https://www.geonames.org/2524907/rome.html https://www.treccani.it/enciclopedia/roma/">Roma</placeName>
+                        <country key="IT">Italia</country>
+                    </place>
+
+                    <!-- Bari -->
+                    <place xml:id="BA">
+                        <placeName ref="https://www.geonames.org/3182350/bari.html https://www.treccani.it/enciclopedia/bari/">Bari</placeName>
+                        <country key="IT">Italia</country>
+                    </place>
+
+                </listPlace>
+
+                <!-- Glossario -->
+                <list type="terminology">
+
+                    <!-- Langue -->
+                    <label>
+                        <term xml:lang="fr" xml:id="langue">Langue</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#langue" source="ontology_F_d_S.owl#langue2">  
+                            instrument sémiologique permettant au langage de se manifester dans la parole ; code social organisant le langage et formant l’outil nécessaire à l’exercice de la faculté du langage, (Engler, 31) ; ensemble des conventions nécessaires adoptées par le corps social pour permettre l&apos;usage de la faculté du langage chez les individus. Institution unique en son genre, par les caractères qui font qu&apos;elle est solidaire du passé. La langue est un système de signaux, de signes. Système de signes reposant sur des images acoustiques, où les deux parties du signe sont psychiques. Sommes des signes évocables. Système de valeurs. (Godel, 266)
+                        </gloss>
+                    </item>
+
+                    <!-- Peuple  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="peuple">Peuple</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#peuple" source="https://www.larousse.fr/dictionnaires/francais/peuple/60039">  
+                            Ensemble de personnes vivant en société sur un même territoire et unies par des liens culturels, des institutions politiques
+                        </gloss>
+                    </item>
+
+                    <!-- Naturellement  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="naturellement">Naturellement</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#naturellement" source="https://www.larousse.fr/dictionnaires/francais/naturellement/53900">  
+                            Comme on doit s'y attendre, d'une manière inévitable ; évidemment
+                        </gloss>
+                    </item>
+
+                    <!-- Continuation  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="continuation">Continuation</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#continuation" source="https://www.larousse.fr/dictionnaires/francais/continuation/18619">  
+                            Action de continuer une action.
+                        </gloss>
+                    </item>
+
+                    <!-- Idiome -->
+                    <label>
+                        <term xml:lang="fr" xml:id="idiome">Idiome</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#idiome" source="ontology_F_d_S.owl#idiome">  
+                            Langue considérée dans ses caractères spéciaux propres à un peuple (Engler, 29) (Godel, 264).
+                        </gloss>
+                    </item>
+
+                    <!-- Antéhistoriques  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="antehistorique">Antéhistorique</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#antehistorique" source="https://www.larousse.fr/dictionnaires/francais/pr%C3%A9historique/63507">  
+                            Relatif à la préhistoire.
+                        </gloss>
+                        <note>synonyme de préhistorique</note>
+                    </item>
+
+                    <!-- Succession  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="succession">Succession</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#succession" source="https://www.larousse.fr/dictionnaires/francais/succession/75163">  
+                            Série de personnes ou de choses qui se succèdent, qui se suivent sans interruption ou à peu d'intervalle.
+                        </gloss>
+                    </item>
+
+                    <!-- Choses  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="chose">Chose</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#chose" source="https://www.larousse.fr/dictionnaires/francais/chose/15712">  
+                            Désigne une entité abstraite, une action, un événement, un énoncé.
+                        </gloss>
+                    </item>
+
+                    <!-- Noms  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="nom">Nom</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#nom" source="ontology_F_d_S.owl#nom">  
+                            Signe linguistique qui par accident se trouve correspondre à un objet défini pour le sens comme un cheval, le feu, le soleil ; v. onymique (Engler, 36).
+                        </gloss>
+                    </item>
+
+                    <!-- Arbitrairement  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="arbitrairement">Arbitrairement</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#arbitrairement" source="https://www.larousse.fr/dictionnaires/francais/arbitrairement/4953">  
+                            De façon arbitraire.
+                        </gloss>
+                    </item>
+
+                    <!-- Temps  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="temp">Temp</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#temp" source="ontology_F_d_S.owl#temps">  
+                            Série d&apos;instants.
+                        </gloss>
+                    </item>
+
+                    <!-- Esprit  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="esprit">Esprit</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#esprit" source="https://www.larousse.fr/dictionnaires/francais/esprit/31059">  
+                            Principe de la vie psychique, intellectuelle ; capacités intellectuelles, intelligence.
+                        </gloss>
+                    </item>
+
+                    <!-- Linguistes  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="linguiste">Linguiste</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#linguiste" source="ontology_F_d_S.owl#linguiste">  
+                            Spécialiste en linguistique.
+                        </gloss>
+                    </item>
+
+                    <!-- Observation  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="observation">Observation</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#observation" source="https://www.larousse.fr/dictionnaires/francais/observation/55426">  
+                            Action de regarder attentivement les phénomènes, les événements, les êtres pour les étudier, les surveiller, en tirer des conclusions, etc.
+                        </gloss>
+                    </item>
+
+                    <!-- Texte  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="texte">Texte</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#texte" source="https://www.larousse.fr/dictionnaires/francais/texte/77624">  
+                            Ensemble des termes, des phrases constituant un écrit, une œuvre écrite.
+                        </gloss>
+                    </item> 
+
+
+                    <!-- Absolue  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="absolue">Absolue</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#absolue" source="https://www.larousse.fr/dictionnaires/francais/absolu/269">  
+                            Qui n'admet aucune restriction, aucune exception ni concession.
+                        </gloss>
+                    </item>
+
+                    <!-- Vanitè  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="vanite">Vanité</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#vanite" source="https://www.larousse.fr/dictionnaires/francais/vanit%C3%A9/81048">  
+                            Caractère de ce qui est vain, futile, vide de sens.
+                        </gloss>
+                    </item>
+
+                    <!-- Inanitè  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="inanite">Inanitè</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#inanite" source="https://www.larousse.fr/dictionnaires/francais/inanit%C3%A9/42145">  
+                           Caractère de ce qui est vain, inutile, voué à l'échec.
+                        </gloss>
+                    </item>
+
+                    <!-- Dénomination  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="denomination">Dénomination</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#denomination" source="https://www.larousse.fr/dictionnaires/francais/d%C3%A9nomination/23595"> 
+                           Action de nommer, de donner un nom à quelque chose.
+                        </gloss>
+                    </item>
+
+                    <!-- Différente  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="differente">Différente</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#differente" source="https://www.larousse.fr/dictionnaires/francais/diff%C3%A9rent/25442">  
+                            Qui n'est pas semblable, identique ; distinct, dissemblable.
+                        </gloss>
+                    </item>
+
+                    <!-- invariablement  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="invariabilment">Invariabilment</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#invariablement" source="https://www.larousse.fr/dictionnaires/francais/invariablement/44068">  
+                            De façon invariable. 
+                        </gloss>
+                    </item>
+
+                    <!-- Idée  --> 
+                    <label>
+                        <term xml:lang="fr" xml:id="idee">Idèe</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#idee" source="https://www.larousse.fr/dictionnaires/francais/id%C3%A9e/41403">  
+                            Représentation abstraite, élaborée par la pensée, d'un être, d'un rapport, d'un objet, etc. ; concept, notion.
+                        </gloss>
+                    </item>
+
+                    <!-- Langue latine  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="langue_latine">Langue latine</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#langue_latine" source="https://www.larousse.fr/dictionnaires/francais/latin/46384">  
+                            Langue indo-européenne du groupe italique, parlée dans l'Antiquité par les Romains et qui est l'ancêtre des langues romanes modernes.
+                        </gloss>
+                    </item>
+
+                    <!-- Sens  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="sens">Sens</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#sens" source="ontology_F_d_S.owl#sens">  
+                            Signification telle qu&apos;elle est représentée par le signifié mais qui dépend en dernière analyse d&apos;un rapport de valeurs entre termes ; voir signification (Engler, 45) (Godel, 276).
+                        </gloss>
+                    </item>
+
+                    <!-- Conception  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="conception">Conception</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#conception" source="https://www.larousse.fr/dictionnaires/francais/conception/17878">  
+                            Action d'élaborer quelque chose dans son esprit, de le concevoir ; résultat de cette action.
+                        </gloss>
+                    </item>
+
+                    <!-- Absurde  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="absurde">Absurde</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#absurde" source="https://www.larousse.fr/dictionnaires/francais/absurde/308">  
+                            Qui est contraire à la raison, au sens commun, qui est aberrant, insensé.
+                        </gloss>
+                    </item>
+
+                    <!-- Natura non facit saltus  -->
+                    <label>
+                        <term xml:lang="latin" xml:id="natura_non_facit_saltus">Natura non facit saltus</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#natura_non_facit_saltus" source="https://www.treccani.it/vocabolario/natura-non-facit-saltus/">  
+                            Tout dans la nature se produit selon des lois fixes.
+                        </gloss>
+                    </item>
+
+                    <!-- Transition  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="transition">Transition</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#transition" source="https://www.larousse.fr/dictionnaires/francais/transition/79157">  
+                            État, degré intermédiaire, passage progressif entre deux états, deux situations.
+                        </gloss>
+                    </item>
+
+                    <!-- Terme  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="terme">Terme</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#terme" source="ontology_F_d_S.owl#term">  
+                            Les termes, ce sont les quantités avec lesquelles on a à opérer ; expressions ayant une valeur déterminée  dans ce sens, terme revient à unité linguistique. D 206 ; II R 74-75, 77. 
+                        </gloss>
+                    </item>
+
+                    <!-- Préalablement  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="prealablement">Préalablement</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#prealablement" source="https://www.larousse.fr/dictionnaires/francais/pr%C3%A9alablement/63278">  
+                            Au préalable, auparavant.
+                        </gloss>
+                    </item>
+
+                    <!-- Insensible  -->
+                    <label>
+                        <term xml:lang="fr" xml:id="insensible">Insensible</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="fr" target="#insensible" source="ontology_F_d_S.owl#linguistique">  
+                            Qui n'est pas facilement perçu, remarqué par l'esprit.
+                        </gloss>
+                    </item>
+
+                </list>
+
+                <!-- Organizzazioni -->
+                <listOrg>
+                    <org xml:id="UniGinevra">
+                        <orgName ref="https://en.wikipedia.org/wiki/University_of_Geneva>">Université de Genève</orgName>
+                            <placeName ref="#GE">Ginevra</placeName>
+                        <desc>
+                            L'università di Ginevra è un'università pubblica di ricerca locata a Ginevra, in Svizzera.
+                        </desc>
+                    </org>
+                    <org xml:id="FacLettere">
+                        <orgName ref="https://www.unige.ch/lettres/fr/">Faculté des lettres - Université de Genève</orgName>
+                        <placeName ref="#GE">Ginevra</placeName>
+                    </org>
+                </listOrg>
+
+            </div>
+        </back>
+    </text>
+
+</TEI>
