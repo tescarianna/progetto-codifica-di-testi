@@ -16,6 +16,7 @@
             </head>
             <body>
                 <header class="header">
+                    <!-- Menu -->
                     <div class="header-wrapper wrapper">
                         <ul class="header-menu">
                             <li> <a class="scroll-to" title="Descrizione" href="#descrizione-fisica">Descrizione</a> </li>
@@ -28,7 +29,7 @@
                 </header>
 
                 <main id="main">
-
+                    <!-- Schermata iniziale -->
                     <section id="Home" class="section section-1">
                         <img class="section-bg" alt="De Saussure" src="assets/img/section1_bg.jpg" />
                         <div class="section-wrapper wrapper">
@@ -95,8 +96,10 @@
                         </div>
                     </section>
 
+                    <!-- Marker attivazione pulsantiera-->
                     <div class="page-content-filters-trigger"></div>
 
+                    <!-- Pulsantiera-->
                     <div class="page-content-filters">
                         <div class="text-center">
                             <ul>
@@ -136,10 +139,17 @@
                                         <span class="legend-label">Glottonimi</span>
                                     </button>
                                 </li>
+                                <li>
+                                    <button data-filter-tag="reg" type="button" class="legend-filter tag-reg">
+                                        <span class="legend-indicator"></span>
+                                        <span class="legend-label">Regolarizzazioni</span>
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Pagina 2 -->
                     <section id="pagina-2" class="section section-4">
                         <div class="wrapper section-wrapper">
                             <h2 class="pagina-1-title section-title">Pagina 2</h2>
@@ -168,6 +178,7 @@
                         </div>
                     </section>
 
+                    <!-- Pagina 3 -->
                     <section id="pagina-3" class="section section-4">
                         <div class="wrapper section-wrapper">
                             <h2 class="pagina-1-title section-title">Pagina 3</h2>
@@ -196,8 +207,10 @@
                         </div>
                     </section>
 
+                    <!-- Marker disattivazione pulsantiera-->
                     <div class="page-content-filters-trigger-remove"></div>
 
+                    <!-- Glossario -->
                     <section id="glossario" class="section section-6">
                         <div class="wrapper section-wrapper">
                             <h2 class="section-title">Glossario</h2>
@@ -207,6 +220,7 @@
                         </div>
                     </section>
 
+                    <!-- Bibliografia -->
                     <section id="bibliografia" class="section section-7">
                         <div class="wrapper section-wrapper">
                             <h2 class="section-title">Bibliografia</h2>
@@ -218,6 +232,7 @@
 
                 </main>
 
+                <!-- Footer -->
                 <footer class="footer">
                     <div class="footer-wrapper">
                         <ul>
@@ -230,7 +245,6 @@
                         </ul>
                     </div>
                 </footer>
-
 
             </body>
         </html>
@@ -345,7 +359,7 @@
     <!-- Template slider immagini e imagemap -->
     <xsl:template match="tei:facsimile">
         <xsl:for-each select="//tei:surface">
-            <!-- Creo lo slider che ospiterà le immagini relative alle pagine -->
+            <!-- slider che ospita le immagini relative alle pagine -->
             <div class="carousel-slide">
                 <xsl:element name="img">
                     <xsl:attribute name="class">carousel-img</xsl:attribute>
@@ -383,7 +397,7 @@
 
     <!-- Lista Template per renderizzare HTML personalizzato a seconda del tag utilizzato nella codifica -->
     
-    <!-- Testo -->
+    <!-- Pericope -->
     <xsl:template match="tei:ab">
         <xsl:element name="h4">
             <xsl:attribute name="class">pericope</xsl:attribute>
@@ -428,10 +442,18 @@
         </xsl:element>
     </xsl:template>
     
-    <!-- Espansioni/testo reg -->
-    <xsl:template match="tei:expan | tei:reg">
+    <!-- Tag expan --> 
+    <xsl:template match="tei:expan">
         <xsl:element name="span">
             <xsl:attribute name="class">expan</xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- Tag reg -->
+    <xsl:template match="tei:reg">
+        <xsl:element name="span">
+            <xsl:attribute name="class">reg</xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>

@@ -52,7 +52,7 @@
 
                 <!-- Informazioni sulla publbicazione -->
                 <pubblicationStmt>
-                    <publisher> Università di Pisa </publisher>
+                    <publisher ref="Unipi"> Università di Pisa </publisher>
                     <pubPlace> Pisa </pubPlace>
                     <availability status="free"> Opera di libero accesso </availability>   
                     <date when="2022-09"> Settembre 2022 </date> 
@@ -77,7 +77,7 @@
                                 <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, <date when="1891-11">Novembre 1891</date>) </title>
                                 <docDate when="1891-11"> Novembre 1891 </docDate>
                                 <textlang mainlang="fr"> Francese </textlang>
-                                <p>E'una collezione di appunti per le prime tre conferenze all’Università di Ginevra, svoltesi il <date when="1891-11-06"> 06/11/1891 </date>, <date when="1891-11-10"> 10/11/1891 </date> e probabilmente<date when="1891-10-13"> 13/11/1891 </date> </p>
+                                <p>E'una collezione di appunti per le prime tre conferenze all’<org><orgName ref="#Unige">Università di Ginevra</orgName></org>, svoltesi il <date when="1891-11-06"> 06/11/1891 </date>, <date when="1891-11-10"> 10/11/1891 </date> e probabilmente<date when="1891-10-13"> 13/11/1891 </date> </p>
                             </msItem>
                         </msContents>
                         <!-- Descrizione fisica -->
@@ -125,10 +125,10 @@
                 </sourceDesc>
         </fileDesc>
 
-        <!-- informazioni riguardo lo schema, il modello di cofica e relazione fra fonte e testo derivato --> 
+        <!-- informazioni riguardo lo schema, il modello di cofica --> 
         <encodingDesc>
-            <editorialDecl> <!-- Schema pericopi --> 
-                <segmentation>
+            <editorialDecl> 
+                <segmentation> <!-- Schema pericopi --> 
                     <p>
                         <!-- Pagina 2-->
                         <list xml:id="list_pag2">
@@ -167,7 +167,7 @@
                                     par exemple que le français succède au latin [...]
                                 </seg>
                                 <desc>
-                                    F. De Saussure fa un esempio basato sulla riflessione precedente
+                                    F. De Saussure fa un esempio a sostegno della riflessione precedente
                                 </desc>
                             </item>
 
@@ -180,7 +180,7 @@
                                     mais que cette succession imaginaire de deux choses vient uniquement de ce qu’il nous plaît de donner deux noms successifs au même idiome [...]
                                 </seg>
                                 <desc>
-                                    F. De Saussure spiega che questo tipo di successione è più che altro immaginaria, quindi una sorta di convenzione che noi scegliamo di utilizzare per chiamare questo idioma
+                                    F. De Saussure spiega che questo tipo di successione è più che altro immaginaria, quindi una sorta di convenzione che noi scegliamo di utilizzare
                                 </desc>
                             </item>
 
@@ -223,7 +223,7 @@
                                     Ce n’est - tous les linguistes le savent [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure afferma che a distinzione fra due lingue, di cui una deriva dall'altra, è realizzabile solo con una lunga osservazione prolungata
+                                    F. De Sassure afferma che solo dopo una lunga osservazione prolungata, ci si può rendere conto della vanità di "una denominazione differente come latino o francese"
                                 </desc>
                             </item>
 
@@ -236,7 +236,7 @@
                                     Qu’arrive-t-il invariablement quand un linguiste vient combattre l’idée erronée  [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure afferma che un linguista non dovrebbe mai partire dal presupposto che una lingua sarà derivata da un'altra
+                                    F. De Sassure afferma che un linguista non dovrebbe mai partire dal presupposto che una lingua darà origine a un'altra
                                 </desc>
                             </item>
 
@@ -249,7 +249,7 @@
                                     Mon Dieu, on abonde dans tous sens, on convient que cela est une conception absurde  [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure ribadisce che fra l'istituzione di una lingua che proviene da un'altra c'è un lungo processo di transizione
+                                    F. De Sassure ribadisce che fra "due lingue" occorre sempre una transizione molto lenta
                                 </desc>
                             </item>
 
@@ -262,7 +262,7 @@
                                     t après cela, est-on plus avancé qu’auparavant   [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure fa una domanda retorica
+                                    F. De Sassure si domanda se ci sono stati dei progressi, dopo che queste informazioni sono state acquisite
                                 </desc>
                             </item>
 
@@ -275,11 +275,10 @@
                                     Nullement, parce qu’on persiste opiniâtrement à se figurer qu’il y a là préalablement  [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure risponde domanda precedentemente posta
+                                    F. De Sassure risponde negativamente alla domanda precedentemente posta, sottolineando che la transizione che c'è fra due parole che poi vengono considerate "sorelle" viene ignorata al più delle volte
                                 </desc>
                             </item>
                         </list>
-
                     </p>
                 </segmentation>
             </editorialDecl>
@@ -1105,7 +1104,7 @@
                             </persName>
                         </author>  
                         <publisher>Bonanno Editore</publisher>
-                        <pubPlace>Acireale - Roma</pubPlace>
+                        <pubPlace><placeName ref="#RM"> Roma</placeName></pubPlace>
                         <date when="2006"> 2006 </date>
                         <idno type="ISBN">887796276-3</idno>
                         <note>
@@ -1314,6 +1313,13 @@
                     <place xml:id="BA">
                         <placeName ref="https://www.geonames.org/3182350/bari.html https://www.treccani.it/enciclopedia/bari/">Bari</placeName>
                         <country key="IT">Italia</country>
+                    </place>
+
+
+                    <!-- Pisa -->
+                    <place xml:id="PI">
+                        <placeName ref="https://www.geonames.org/3170647/pisa.html https://www.treccani.it/enciclopedia/pisa/">Pisa</placeName>
+                        <country key="IT">Pisa</country>
                     </place>
 
                 </listPlace>
@@ -1637,16 +1643,19 @@
 
                 <!-- Organizzazioni -->
                 <listOrg>
-                    <org xml:id="UniGinevra">
+                    <org xml:id="Unige">
                         <orgName ref="https://en.wikipedia.org/wiki/University_of_Geneva>">Université de Genève</orgName>
                             <placeName ref="#GE">Ginevra</placeName>
                         <desc>
                             L'università di Ginevra è un'università pubblica di ricerca locata a Ginevra, in Svizzera.
                         </desc>
                     </org>
-                    <org xml:id="FacLettere">
-                        <orgName ref="https://www.unige.ch/lettres/fr/">Faculté des lettres - Université de Genève</orgName>
-                        <placeName ref="#GE">Ginevra</placeName>
+                    <org xml:id="Unipi">
+                        <orgName ref="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Pisa"> di Pisa</orgName>
+                            <placeName ref="#PI">Pisa</placeName>
+                        <desc>
+                            L'università di Ginevra è un'università pubblica di ricerca locata a Pisa, in Italia.
+                        </desc>
                     </org>
                 </listOrg>
 

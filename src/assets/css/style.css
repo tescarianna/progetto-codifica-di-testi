@@ -25,6 +25,7 @@
     --tag-color-top: #4174b3;
     --tag-color-date: #0a970a;
     --tag-color-abbr: #db5a15;
+    --tag-color-reg: #70a414;
     --shadow-1: 0px 10px 20px rgba(0, 0, 0, 0.2);
     --shadow-2: 0px 2px 5px rgba(0, 0, 0, 0.2);
     --font-family-1: 'Lato', sans-serif;
@@ -414,6 +415,11 @@ p {
     box-shadow: var(--shadow-2);
 }
 
+
+.analyzed-text .reg {
+    display: none;
+}
+
 .analyzed-text .del {
     display: none;
 }
@@ -440,6 +446,12 @@ p {
 .analyzed-text .highlighted.sic {
     border: 1px solid var(--color-6);
     background-color: var(--tag-color-cor);
+    display: inline-block;
+}
+
+.analyzed-text .highlighted.reg {
+    border: 1px solid var(--color-6);
+    background-color: var(--tag-color-reg);
     display: inline-block;
 }
 
@@ -593,6 +605,11 @@ button.legend-filter.tag-del .legend-indicator {
     background-color: var(--tag-color-del);
 }
 
+button.legend-filter.tag-reg .legend-indicator {
+    border: 2px solid var(--color-1);
+    background-color: var(--tag-color-reg);
+}
+
 button.legend-filter.tag-del.active {
     border-color: var(--tag-color-del);
 }
@@ -658,6 +675,10 @@ button.legend-filter.tag-top .legend-indicator {
 
 button.legend-filter.tag-top.active {
     border-color: var(--tag-color-top);
+}
+
+button.legend-filter.tag-reg.active {
+    border-color: var(--tag-color-reg);
 }
 
 button.legend-filter.tag-date .legend-indicator {
