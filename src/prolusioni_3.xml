@@ -51,33 +51,31 @@
                 </editionStmt>
 
                 <!-- Informazioni sulla publbicazione -->
-                <pubblicationStmt>
+                <publicationStmt>
                     <publisher ref="Unipi"> Università di Pisa </publisher>
                     <pubPlace> Pisa </pubPlace>
-                    <availability status="free"> Opera di libero accesso </availability>   
+                    <availability status="free"><p>Opera di libero accesso</p></availability>   
                     <date when="2022-09"> Settembre 2022 </date> 
-                </pubblicationStmt>
+                </publicationStmt>
 
                 <!-- Indica la fonte da cui un file è derivato  -->
                 <sourceDesc>
                     <msDesc>
                         <msIdentifier>                 
-                            <country >Svizzera</country> 
+                            <country>Svizzera</country> 
                             <settlement>Ginevra</settlement>
-                            <istitution>Biblioteca di Ginevra</istitution>
+                            <institution>Biblioteca di Ginevra</institution>
                             <repository role="library">Biblioteca di <placeName ref="#GE">Ginevra</placeName></repository> 
                             <collection>Archivio Ferdinand de Saussure</collection>
                             <idno type="inventory">3951/1.1-3</idno>
-                            <altIdentifier type="inventory"><idno>17786/vtae78f994bf3242bef</idno></altIdentifier>
                         </msIdentifier>
                         <!-- Descrizione del contenuto del manoscritto -->
                         <msContents>
                             <msItem>
                                 <author xml:lang="fr" ref="#FDS">Ferdinand de Saussure</author> 
                                 <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, <date when="1891-11">Novembre 1891</date>) </title>
-                                <docDate when="1891-11"> Novembre 1891 </docDate>
-                                <textlang mainlang="fr"> Francese </textlang>
-                                <p>E'una collezione di appunti per le prime tre conferenze all’<org><orgName ref="#Unige">Università di Ginevra</orgName></org>, svoltesi il <date when="1891-11-06"> 06/11/1891 </date>, <date when="1891-11-10"> 10/11/1891 </date> e probabilmente<date when="1891-10-13"> 13/11/1891 </date> </p>
+                                <docDate when="1891-11">11/1891</docDate> 
+                                <textLang mainLang="fr">Francese</textLang>
                             </msItem>
                         </msContents>
                         <!-- Descrizione fisica -->
@@ -93,8 +91,8 @@
                                             <measure quantity="15"> 15 pagine + </measure>
                                             <measure quantity="22"> 22 pagine + </measure>
                                             <measure quantity="1"> 1 foglietto </measure>
-                                            <p> Sono presenti 67 pagine (30 + 15 + 22 pagine + 1 foglietto) </p>
-                                        </measureGrp>
+                                            <measure>67 pagine (30 + 15 + 22 pagine + 1 foglietto)</measure>
+                                        </measureGrp> 
                                     </extent>
                                     <foliation> La pagina è una parte del quanderno d'appunti e cosiste in un foglio </foliation>
                                     <condition>Le pagine si presentano in condizioni abbastanza buone, infatti nonostante si possano osservare alcuni strappi, la lettura non è ostacolata </condition>
@@ -355,7 +353,7 @@
                 <zone ulx="190" uly="272" lrx="243" lry="282" rendition="hotspot" xml:id="facs_pag2-lb10-add10" /> <!-- Aggiunta su cancellatura riga 10-->
                 <zone ulx="250" uly="316" lrx="399" lry="331" rendition="hotspot" xml:id="facs_pag2-lb11-del8" /> <!-- Cancellatura riga 11-->
                 <zone ulx="257" uly="304" lrx="332" lry="312" rendition="hotspot" xml:id="facs_pag2-lb11-add11" /> <!-- Aggiunta su cancellatura riga 11 -->
-                <zone points = ' 148,412 491,400 480,480 64,477 71,441 99,433 135,430 ' rendition="hotspot" xml:id="#facs_pag2-lb14-15-16-del9" /> <!-- Cancellatura righe 14-15-16 -->
+                <zone points = ' 148,412 491,400 480,480 64,477 71,441 99,433 135,430 ' rendition="hotspot" xml:id="facs_pag2-lb14-15-16-del9" /> <!-- Cancellatura righe 14-15-16 -->
                 <zone ulx="146" uly="400" lrx="460" lry="408" rendition="hotspot" xml:id="facs_pag2-lb14-add12" /> <!-- Aggiunta su cancellatura riga 14 -->
                 <zone ulx="373" uly="483" lrx="448" lry="492" rendition="hotspot" xml:id="facs_pag2-lb17-add13" /> <!-- Aggiunta riga 17 -->
                 <zone ulx="16" uly="521" lrx="65" lry="549" rendition="hotspot" xml:id="facs_pag2-lb18-add14" /> <!-- Aggiunta margine sx - riga 18 -->
@@ -532,8 +530,8 @@
                                 </add>
                                 <subst hand="#FdS">
                                     <del rend="overstrike" facs="#facs_pag2-lb7-del4" > <unclear reason="parteased" cert="high" resp="#AT"> anterieur </unclear> </del>
-                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb7-add6" > la veille </add>,
-                                </subst>
+                                    <add hand="#FdS" place="above" facs="#facs_pag2-lb7-add6" >la veille </add>
+                                </subst>,
                                 <!-- Testo ripetuto -->
                                 et toujours <surplus reason="repeted">et toujour</surplus>
                                 <!-- Riga 8 -->
@@ -668,7 +666,7 @@
                             <!-- Fine quarta pericope -->
 
                             <!-- Quinta pericope -->
-                            <ab xml:id="pericope_91Caac0005" n="5" xml_lang="fr" facs="facs_pericope-5-pag2" corresp="it_91Caac0005">
+                            <ab xml:id="pericope_91Caac0005" n="5" xml:lang="fr" facs="facs_pericope-5-pag2" corresp="it_91Caac0005">
                                 <!-- Riga 21 -->
                                 <lb xml:id="lb21-pag2" n="21" facs="#facs_pag2-lb21" />
                                 <add hand="#FdS" place="margin left" facs="#facs_pag2-lb21-add16">Sans doute,</add> 
@@ -745,10 +743,10 @@
                             <!-- Continuazione pericope 6, cominciata nella pagina precedente -->
                             <ab xml:id="pericope_91Caac0006b" n="6" xml:lang="fr" facs="#facs_pericope-6b-pag3" corresp="#pericope_91Caac0006a it_91Caac0006"> 
                                 <!-- Riga 1 -->
-                                <lb xml_id="lb1-pag3" n="1" facs="#facs_pag3-lb1" />
+                                <lb xml:id="lb1-pag3" n="1" facs="#facs_pag3-lb1" />
                                 <del rend="overstrike" facs="#facs_pag3-lb1-del1">L'observation <gap atLeast="3" atMost="4" unit="chars" reason="deleted" ></gap> à fait </del>
                                 <!-- Riga 2 -->
-                                <lb xml_id="lb2-pag3" n="2" facs="#facs_pag3-lb2" />
+                                <lb xml:id="lb2-pag3" n="2" facs="#facs_pag3-lb2" />
                                 <del rend="overstrike" facs="#facs_pag3-lb1-del2"> <unclear reason="parteased" cert="high" resp="#AT">La lecture est </unclear> </del >
                                 <term ref="#observation">l’observation</term> <add hand="#FdS" place="above" facs="#facs_pag3-lb2-add1">particulièrement</add> 
                                 <subst>
@@ -756,10 +754,10 @@
                                     <add hand="#FdS" place="above" facs="#facs_pag3-lb2-add2"> prolongée </add>
                                 </subst>
                                 <!-- Riga 3 -->
-                                <lb xml_id="lb3-pag3" n="3" facs="#facs_pag3-lb3" />
+                                <lb xml:id="lb3-pag3" n="3" facs="#facs_pag3-lb3" />
                                 de ce <del hand="#FdS" rend="overstrike" facs="#facs_pag3-lb3-del4"><unclear reason="deleted" cert="high" resp="#AT"> qui se passe de</unclear> </del> qu’est la <term ref="#langue">langue</term> 
                                 <!-- Riga 4 -->
-                                <lb xml_id="lb4-pag3" n="4" facs="#facs_pag3-lb4" />
+                                <lb xml:id="lb4-pag3" n="4" facs="#facs_pag3-lb4" />
                                 de <term ref="#texte">texte</term> en <term ref="#texte">texte</term>, de 
                                 <choice>
                                     <orig> 50 </orig>
@@ -767,7 +765,7 @@
                                 </choice> 
                                 ans en 
                                 <!-- Riga 5 -->
-                                <lb xml_id="lb5-pag3" n="5" facs="#facs_pag3-lb5" />
+                                <lb xml:id="lb5-pag3" n="5" facs="#facs_pag3-lb5" />
                                 <choice>
                                     <orig> 50 </orig>
                                     <reg> <num type="cardinal" value="50">cinquante </num></reg>
@@ -784,13 +782,13 @@
                                 </choice>  
                                 ans, qu’on 
                                 <!-- Riga 6 -->
-                                <lb xml_id="lb6-pag3" n="6" facs="#facs_pag3-lb6" />
+                                <lb xml:id="lb6-pag3" n="6" facs="#facs_pag3-lb6" />
                                 arrive enfin à se pénétrer soi-même
                                 <!-- Riga 7 -->
-                                <lb xml_id="lb7-pag3" n="7" facs="#facs_pag3-lb7" />
+                                <lb xml:id="lb7-pag3" n="7" facs="#facs_pag3-lb7" />
                                 profondément <add hand="#FdS" place="above" facs="#facs_pag3-lb7-add3"><unclear reason="illegible" resp="#B_E" cert="high">définitivement</unclear></add> de l’<term ref="#absolue">absolue</term> <term ref="#vanite">vanité </term>
                                 <!-- Riga 8 -->
-                                <lb xml_id="lb8-pag3" n="8" facs="#facs_pag3-lb8" />
+                                <lb xml:id="lb8-pag3" n="8" facs="#facs_pag3-lb8" />
                                 <add hand="#FdS" place="margin left" facs="#facs_pag3-lb8-add4"> et <term ref="#inanite">inanité</term></add> d’une <term ref="#denomination">dénomination</term> <term ref="#differente">différente</term> comme
                                 <!-- Riga 9 -->
                                 <lb xml:id="lb9-pag3" n="9" facs="#facs_pag3-lb9"/>    
@@ -907,7 +905,7 @@
                                 </add> à se 
                                 <!-- Riga 23 -->
                                 <lb xml:id="lb23-pag3" n="23" facs="#facs_pag3-lb23" />
-                                figurer qu’ <emph rend="underline">il y a <add and="#FdS" place="above" facs="#facs_pag3-lb22-add14">là <unclear reason="illegible" resp="#B_E" cert="#high"><term ref="#prealablement">préalablement</term> </unclear></add> 
+                                figurer qu’ <emph rend="underline">il y a <add hand="#FdS" place="above" facs="#facs_pag3-lb22-add14">là <unclear reason="illegible" resp="#B_E" cert="#high"><term ref="#prealablement">préalablement</term> </unclear></add> 
                                 <choice>
                                     <orig> 2 </orig>
                                     <reg> <num type="cardinal" value="2">deux </num></reg>
@@ -933,7 +931,11 @@
 
                 <!-- Retro pagina 3 - Pag. vuota -->
                 <text xml:id="fr_pag-4">
-                    <pb n="4" facs="pagina3.png" xml:id="retro_pagina_seconda"/>
+                    <body>
+                        <div>
+                            <pb n="4" facs="pagina3.png" xml:id="retro_pagina_4"/>
+                        </div>
+                    </body>
                 </text>
 
             </group>
@@ -944,7 +946,7 @@
                 <text xml:id="it_prolusioni3-pag2">
                     <body source="#Fadda2006" resp="#EF">
                         <!-- Pericope 1 -->
-                        <ab xml_id="it_91Caac0001" corresp="#pericope_91Caac0001" n="1" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0001" corresp="#pericope_91Caac0001" n="1" xml:lang="It"> 
                             che se si sopprime la lingua di un 
                             popolo imponendogliene un’altra, 
                             quest’ultima si trova ad essere, 
@@ -957,7 +959,7 @@
                         </ab>
 
                         <!-- Pericope 2 -->
-                        <ab xml_id="it_91Caac0002" corresp="#pericope_91Caac0002" n="2" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0002" corresp="#pericope_91Caac0002" n="2" xml:lang="It"> 
                             Ricorderò soprattutto, sempre 
                             nello stesso ordine di idee, che non succede 
                             mai che una <hi rend="italic">lingua succeda a 
@@ -965,12 +967,12 @@
                         </ab>   
 
                         <!-- Pericope 3 -->
-                        <ab xml_id="it_91Caac0003" corresp="#pericope_91Caac0003" n="3" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0003" corresp="#pericope_91Caac0003" n="3" xml:lang="It"> 
                             per esempio che il <hi rend="italic">francese</hi> succeda al latino;
                         </ab> 
 
                         <!-- Pericope 4 -->
-                        <ab xml_id="it_91Caac0004" corresp="#pericope_91Caac0004" n="4" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0004" corresp="#pericope_91Caac0004" n="4" xml:lang="It"> 
                             ma che questa successione immaginaria di due cose viene 
                             unicamente dal fatto che ci aggrada dare due nomi successivi 
                             allo stesso idioma, e di conseguenza di 
@@ -978,7 +980,7 @@
                         </ab> 
 
                         <!-- Pericope 5 -->
-                        <ab xml_id="it_91Caac0005" corresp="#pericope_91Caac0005" n="5" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0005" corresp="#pericope_91Caac0005" n="5" xml:lang="It"> 
                             Senza dubbio, l’influenza che esercitano sulla nostra mente 
                             due nomi successivi di questo genere è
                             talmente decisiva e talmente irremovibile, inestirpabile, che 
@@ -987,7 +989,7 @@
                         </ab> 
 
                         <!-- Pericope 6 -->
-                        <ab xml_id="it_91Caac0006" corresp="pericope_91Caac0006a" n="6" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0006" corresp="pericope_91Caac0006a" n="6" xml:lang="It"> 
                             È solo – 
                             tutti i linguisti lo sanno –
                         </ab> 
@@ -999,7 +1001,7 @@
                 <text xml:id="it_prolusioni3-pag3"> 
                     <body source="#Fadda2006" resp="#EF">
                         <!-- Continuazione Pericope 6 -->
-                        <ab xml_id="it_91Caac0006" corresp="#pericope_91Caac0006b" n="6" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0006b" corresp="#pericope_91Caac0006b" n="6" xml:lang="It"> 
                             attraverso l’osservazione particolarmente prolungata 
                             di ciò che la lingua è 
                             di testo in testo, di cinquant’anni in
@@ -1011,7 +1013,7 @@
                         </ab>
 
                         <!-- Pericope 7 -->
-                        <ab xml_id="it_91Caac0007" corresp="#pericope_91Caac0007" n="7" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0007" corresp="#pericope_91Caac0007" n="7" xml:lang="It"> 
                             Che accade, invariabilmente, 
                             quando un linguista si mette contro
                             l’idea sbagliata che la lingua 
@@ -1019,7 +1021,7 @@
                         </ab>
 
                         <!-- Pericope 8 -->
-                        <ab xml_id="it_91Caac0008" corresp="#pericope_91Caac0008" n="8" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0008" corresp="#pericope_91Caac0008" n="8" xml:lang="It"> 
                             Mio Dio, si abbonda in tutti i 
                             sensi, si conviene che questa è una
                             concezione assurda, si sa che 
@@ -1031,14 +1033,14 @@
                         </ab>
 
                         <!-- Pericope 9 -->
-                        <ab xml_id="it_91Caac0009" corresp="#pericope_91Caac0009" n="9" xml:lang="It"> 
+                        <ab xml:id="it_91Caac0009" corresp="#pericope_91Caac0009" n="9" xml:lang="It"> 
                             – e dopo tutto
                             questo, si è fatto qualche passo avanti     
                             rispetto a prima?
                         </ab>
 
                         <!-- Pericope 10 -->
-                        <ab xml_id="it_91Caac0010" corresp="#pericope_91Caac0010" n="10" xml:lang="It">
+                        <ab xml:id="it_91Caac0010" corresp="#pericope_91Caac0010" n="10" xml:lang="It">
                             Proprio per nulla, perché si persiste ostinatamente a 
                             figurarsi che vi sono due termini già dati, uniti, 
                             certamente, da una transizione insensibile,
@@ -1531,7 +1533,7 @@
 
                     <!-- invariablement  -->
                     <label>
-                        <term xml:lang="fr" xml:id="invariabilment">Invariabilment</term>
+                        <term xml:lang="fr" xml:id="invariablement">Invariabilment</term>
                     </label>
                     <item>
                         <gloss xml:lang="fr" target="#invariablement" source="https://www.larousse.fr/dictionnaires/francais/invariablement/44068">  

@@ -9,7 +9,7 @@ Di seguito sono presenti i comandi per validare e compilare il progetto:
 ## Validazione XML tramite Xerces
 
 ```shell
-$ java -cp "_tools/xerces/xml-apis.jar;_tools/xerces/xercesImpl.jar;_tools/xerces/xercesSamples.jar" dom.Counter src/prolusioni_3.xml
+$ java -cp "_tools/xerces/xml-apis.jar;_tools/xerces/xercesImpl.jar;_tools/xerces/xercesSamples.jar" dom.Counter -v src/prolusioni_3.xml
 ```
 
 ## Generazione output HTML a partire da .xsl tramite Saxon

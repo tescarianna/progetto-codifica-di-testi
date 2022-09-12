@@ -293,7 +293,7 @@
                         <span>Lingua</span>
                     </td>
                     <td class="detail-list-value">
-                        <span><xsl:value-of select="tei:msItem/tei:textlang"/></span>
+                        <span><xsl:value-of select="tei:msItem/tei:textLang"/></span>
                     </td>
                 </tr>
                 <tr class="detail-list-row">
@@ -333,7 +333,7 @@
                         <span>Quantità</span>
                     </td>
                     <td class="detail-list-value">
-                        <xsl:value-of select="tei:objectDesc//tei:measureGrp/tei:p"/>
+                        <xsl:value-of select="tei:objectDesc//tei:measureGrp/tei:measure[last()]"/>
                     </td>
                 </tr>
                 <tr class="detail-list-row">
