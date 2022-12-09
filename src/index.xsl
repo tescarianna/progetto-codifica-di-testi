@@ -19,6 +19,7 @@
                     <!-- Menu -->
                     <div class="header-wrapper wrapper">
                         <ul class="header-menu">
+                            <li> <a class="scroll-to" title="Informazioni" href="#informazioni-sul-progetto">Informazioni</a> </li>
                             <li> <a class="scroll-to" title="Descrizione" href="#descrizione-fisica">Descrizione</a> </li>
                             <li> <a class="scroll-to" title="Pagina 2" href="#pagina-2">Pagina 2</a> </li>
                             <li> <a class="scroll-to" title="Pagina 3" href="#pagina-3"> Pagina 3</a></li>
@@ -53,7 +54,7 @@
                         <div class="wrapper section-wrapper">
                             <h2 class="section-title">Informazioni sul progetto</h2>
                             <p>Il progetto è stato realizzato da Arianna Tescari per l'esame di Codifica di Testi, previsto dal corso di laurea triennale in Informatica Umanistica, nell'anno accademico 2021-2022.</p>
-                            <p>Il lavoro ha previsto la codifica di due pagine, comprese nelle <em>Prolusioni 3</em>, una parte della raccolta di appunti <em>Trois premières conférences à l'Université</em>, corrispondente alla terza conferenza all'Università di Ginevra, svoltasi il 13/11/1891 o il 17/11/1891.</p>
+                            <p>Il lavoro ha previsto la codifica di due pagine, comprese nelle <em>Prolusioni 3</em>, una parte della raccolta di appunti <em>Trois premières conférences à l'Université</em>, corrispondente alla terza conferenza all'Università di Ginevra, svoltasi probabilmente il 13/11/1891 o il 17/11/1891.</p>
                             <br/>
                         </div>
                     </section>
@@ -74,7 +75,7 @@
                         </div>
                     </section>
 
-                    <!-- Pagine analizzate + carousel-->
+                    <!-- Pagine analizzate + carousel--> 
                     <section id="pagine" class="carousel">
                         <div class="carousel-wrapper wrapper">
                             <h2 class="carousel-title">Pagine analizzate</h2>
@@ -371,7 +372,7 @@
                     <xsl:attribute name="name"><xsl:value-of select="@xml:id" /></xsl:attribute>
                     <!-- Ottengo il valore "width" di ciascun tag <graphic> e rimuovo px alla fine in modo da poter calcolare il ratio --> 
                     <xsl:variable name="width">
-                    <xsl:value-of select="concat(substring-before(tei:graphic/@width, 'px'), '')"/>
+                        <xsl:value-of select="substring-before(tei:graphic/@width, 'px')"/>
                     </xsl:variable>          
                     <!-- Calcolo il rapporto tra la larghezza dell'immagine e quella del contenitore che la ospiterà -->
                     <xsl:variable name="ratio" select="500 div $width"/>
@@ -405,6 +406,7 @@
         </xsl:element>
         <xsl:apply-templates/>
     </xsl:template>
+
 
     <!-- Righe -->
     <xsl:template match="tei:lb">

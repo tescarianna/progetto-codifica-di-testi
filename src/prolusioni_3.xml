@@ -4,7 +4,7 @@
 
     Filename: prolusioni3.xml
     Author: Arianna Tescari
-    Date: 2022-09 -->
+    Date: 2022-12 -->
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 
@@ -20,7 +20,7 @@
 
                 <!-- informazioni editoriali -->
                 <editionStmt>
-                    <edition n="Digital edition"> Edizione digitale <date when="2022-09">settembre 2022</date> </edition>
+                    <edition n="Digital edition"> Edizione digitale <date when="2022-12">dicembre 2022</date> </edition>
                     <respStmt> <!-- "Responsabilità" dei contenuti --> 
                         <resp>Progetto coordinato da </resp>
                         <persName> 
@@ -52,10 +52,10 @@
 
                 <!-- Informazioni sulla publbicazione -->
                 <publicationStmt>
-                    <publisher ref="Unipi"> Università di Pisa </publisher>
+                    <publisher ref="#Unipi"> Università di Pisa </publisher>
                     <pubPlace> Pisa </pubPlace>
                     <availability status="free"><p>Opera di libero accesso</p></availability>   
-                    <date when="2022-09"> Settembre 2022 </date> 
+                    <date when="2022-12"> Dicembre 2022 </date> 
                 </publicationStmt>
 
                 <!-- Indica la fonte da cui un file è derivato  -->
@@ -73,7 +73,7 @@
                         <msContents>
                             <msItem>
                                 <author xml:lang="fr" ref="#FDS">Ferdinand de Saussure</author> 
-                                <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, <date when="1891-11">Novembre 1891</date>) </title>
+                                <title xml:lang="fr">Trois premières conférences à l'Université (Cours d'ouverture, <date when="1891-11">novembre 1891</date>) </title>
                                 <docDate when="1891-11">11/1891</docDate> 
                                 <textLang mainLang="fr">Francese</textLang>
                             </msItem>
@@ -91,10 +91,10 @@
                                             <measure quantity="15"> 15 pagine + </measure>
                                             <measure quantity="22"> 22 pagine + </measure>
                                             <measure quantity="1"> 1 foglietto </measure>
-                                            <measure>67 pagine (30 + 15 + 22 pagine + 1 foglietto)</measure>
+                                            <measure>67 pagine (30 + 15 + 22) + 1 foglietto</measure>
                                         </measureGrp> 
                                     </extent>
-                                    <foliation> La pagina è una parte del quanderno d'appunti e cosiste in un foglio </foliation>
+                                    <foliation> La pagina è una parte del quanderno d'appunti e consiste in un foglio </foliation>
                                     <condition>Le pagine si presentano in condizioni abbastanza buone, infatti nonostante si possano osservare alcuni strappi, la lettura non è ostacolata </condition>
                                 </supportDesc>
                             </objectDesc>
@@ -112,7 +112,7 @@
                                 <p>
                                     Gli appunti, probabilmente destinati alla pubblicazione di una brochure, sono stati scritti per le conferenze all'Università di 
                                     <placeName ref="#GE">Ginevra</placeName> e utilizzati in parte per le prime lezioni 
-                                    del corso di <foreign xml:lang="fr"> <hi rend="italic">Phonétique du grec et du latin</hi></foreign>, nel <date when="1891-11">novembre 1891</date>
+                                    del corso di <foreign xml:lang="fr"> <hi rend="italic">Phonétique du grec et du latin</hi> </foreign>, nel <date when="1891-11">novembre 1891</date>
                                 </p>
                             </origin>
                             <acquisition> 
@@ -165,7 +165,7 @@
                                     par exemple que le français succède au latin [...]
                                 </seg>
                                 <desc>
-                                    F. De Saussure fa un esempio a sostegno della riflessione precedente
+                                    F. De Saussure fa un esempio a sostegno della riflessione precedente, utilizzando il francese e il latino
                                 </desc>
                             </item>
 
@@ -178,7 +178,7 @@
                                     mais que cette succession imaginaire de deux choses vient uniquement de ce qu’il nous plaît de donner deux noms successifs au même idiome [...]
                                 </seg>
                                 <desc>
-                                    F. De Saussure spiega che questo tipo di successione è più che altro immaginaria, quindi una sorta di convenzione che noi scegliamo di utilizzare
+                                    F. De Saussure spiega che questo tipo di successione è più che altro immaginaria, quindi una sorta di convenzione che noi scegliamo di utilizzare, per separare due cose nel tempo 
                                 </desc>
                             </item>
 
@@ -191,10 +191,11 @@
                                     Sans doute, l’influence qu’exercent sur notre esprit deux noms successifs de ce genre est tellement décisive et tellement inébranlable [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure esprime una riflessione su quanto questa concezione sia radicata nell'essere umano e quindi difficile da abbandonare
+                                    F. De Sassure afferma che questa concezione è così radicata nell'essere umano e quindi difficile da abbandonare, pertanto non si aspetta di essere subito capito.
                                 </desc>
                             </item>
 
+                            <!-- da rivedere -->
                             <!-- Pericope 6a -->
                             <label>
                                 <idno type="ID-pericope">91Caac0006</idno>
@@ -247,7 +248,7 @@
                                     Mon Dieu, on abonde dans tous sens, on convient que cela est une conception absurde  [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure ribadisce che fra "due lingue" occorre sempre una transizione molto lenta
+                                    F. De Sassure ribadisce che quel tipo di concezione è assurda e che fra "due lingue" occorre sempre una transizione molto lenta
                                 </desc>
                             </item>
 
@@ -260,7 +261,7 @@
                                     t après cela, est-on plus avancé qu’auparavant   [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure si domanda se ci sono stati dei progressi, dopo che queste informazioni sono state acquisite
+                                    F. De Sassure si domanda se ci sono stati dei progressi nel tempo
                                 </desc>
                             </item>
 
@@ -273,7 +274,7 @@
                                     Nullement, parce qu’on persiste opiniâtrement à se figurer qu’il y a là préalablement  [...]
                                 </seg>
                                 <desc>
-                                    F. De Sassure risponde negativamente alla domanda precedentemente posta, sottolineando che la transizione che c'è fra due parole che poi vengono considerate "sorelle" viene ignorata al più delle volte
+                                    F. De Sassure risponde negativamente al quesito sopra presentato, sottolineando che la transizione che c'è fra due parole che poi vengono considerate "sorelle" viene ignorata al più delle volte
                                 </desc>
                             </item>
                         </list>
@@ -474,7 +475,7 @@
                         <ab> <fw type="pageNum" xml:id="hand-page-n-2" rend="align(left)" facs="#facs_hand-page-number-2"> 2 </fw> </ab> 
                         <div xml:id="div_pag2">
                             <!-- Prima pericope -->
-                            <ab xml:id="pericope_91Caac0001" n="1" xml:lang="fr" facs="#facs_pericope-1-pag2" corresp="it_91Caac0001"> 
+                            <ab xml:id="pericope_91Caac0001" n="1" xml:lang="fr" facs="#facs_pericope-1-pag2" corresp="#it_91Caac0001"> 
                                 <!-- Riga 1 -->
                                 <lb xml:id="lb1-p2" n="1" facs="#facs_pag2-lb1"/>
                                 que si on supprime 
@@ -524,7 +525,7 @@
                                 <lb xml:id="lb7-p2" n="7" facs="#facs_pag2-lb7" />
                                 <add hand="#FdS" place="margin left" facs="#facs_pag2-lb7-add5">
                                     <choice >
-                                        <abbr type="contraction"> existt </abbr>
+                                        <abbr type="contraction"> exist<am>t</am> </abbr>
                                         <expan>exist<ex>ant</ex></expan>
                                     </choice> 
                                 </add>
@@ -547,7 +548,7 @@
                                 <lb xml:id="lb9-p2" n="9" facs="#facs_pag2-lb9" /> 
                                 <add hand="#FdS" place="margin left" facs="#facs_pag2-lb9-add7">
                                     <choice>
-                                        <abbr> existt </abbr>
+                                        <abbr> exist<am>t</am> </abbr>
                                         <expan>exist<ex>ant</ex></expan>
                                     </choice> 
                                 </add>
@@ -568,12 +569,12 @@
                                     <del rend="overstrike" facs="#facs_pag2-lb10-del7"> <gap atLeast="8" atMost="10" unit="chars" reason="deleted">  </gap> </del> 
                                     <add hand="#FdS" place="above" facs="#facs_pag2-lb10-add10">décidément</add> 
                                 </subst>
-                                <term ref="#antehistorique"> antéhistoriques</term>
+                                <term ref="#antehistorique"> antéhistoriques</term> <pc>.</pc>
                             </ab>
                             <!-- Fine prima pericope -->
 
                             <!-- Seconda pericope -->
-                            <ab xml:id="pericope_91Caac0002" n="2" xml:lang="fr" facs="#facs_pericope-2-pag2" corresp="it_91Caac0002"> 
+                            <ab xml:id="pericope_91Caac0002" n="2" xml:lang="fr" facs="#facs_pericope-2-pag2" corresp="#it_91Caac0002"> 
                                 <!-- Riga 11 -->
                                 <lb xml:id="lb11-p2" n="11" facs="#facs_pag2-lb11" />
                                 Je rappellerais 
@@ -589,20 +590,20 @@
                                 <lb xml:id="lb13-p2" n="13" facs="#facs_pag2-lb13" />
                                 jamais qu’une   
                                 <emph rend="underline"><term ref="#langue">langue</term> succède à une </emph> 
-                                <!-- Riga 14 -->
+                                <!-- Riga 14 -->  <!-- da rivedere perchè la riga 14 inizia qui ma continua nell pericope seguente  -->
                                 <lb xml:id="lb14-p2" n="14" facs="#facs_pag2-lb14" />
                                 <emph rend="underline"> autre </emph>; 
                             </ab>
                             <!-- Fine seconda pericope-->
 
                             <!-- Terza pericope -->
-                            <ab xml:id="pericope_91Caac0003" n="3" xml:lang="fr" facs="#facs_pericope-3-pag2" corresp="it_91Caac0003">
+                            <ab xml:id="pericope_91Caac0003" n="3" xml:lang="fr" facs="#facs_pericope-3-pag2" corresp="#it_91Caac0003">
                                 <!-- Riga 14 continuazione -->
                                 <subst>
                                     <del rend="overstrike" facs="#facs_pag2-lb14-15-16-del9"> <unclear reason="deleted" cert="hing" resp="#AT"> par example que le <emph rend="underline">français</emph> succède </unclear> </del> 
                                     <add hand="#FdS" place="above" facs="#facs_pag2-lb14-add12">par 
                                         <choice> 
-                                            <abbr>ex. </abbr>
+                                            <abbr>ex <am>. </am> </abbr>
                                             <expan>ex<ex>emple</ex></expan>
                                         </choice> 
                                         que le <emph rend="underline"> <lang xml:id="glott-1">français</lang> </emph> succède au <emph rend="underline" ><lang xml:id="glott-2">latin</lang></emph> ;
@@ -618,7 +619,7 @@
                             <!-- Fine terza pericope -->
 
                             <!-- Quarta pericope --> 
-                            <ab xml:id="pericope_91Caac0004" n="4" xml:lang="fr" facs="#facs_pericope-4-pag2" corresp="it_91Caac0004">
+                            <ab xml:id="pericope_91Caac0004" n="4" xml:lang="fr" facs="#facs_pericope-4-pag2" corresp="#it_91Caac0004">
                                 <!-- Riga 17 -->
                                 <lb xml:id="lb17-pag2" n="17" facs="#facs_pag2-lb17" /> 
                                 mais que cette <term ref="#succession">succession</term> imaginaire 
@@ -633,6 +634,7 @@
                                 <lb xml:id="lb18-pag2" n="18" facs="#facs_pag2-lb18" />
                                 <add hand="#FdS" place="margin left" facs="#facs_pag2-lb18-add14">
                                     <choice>
+                                        <!-- da rivedere -->
                                         <abbr type="contracrion"> <unclear reason="illegible" cert="low"> uniq=r </unclear> </abbr>
                                         <expan> uniq<ex>uement</ex> </expan>
                                     </choice>
@@ -661,16 +663,17 @@
                                     <abbr type="contraction">ds</abbr> 
                                     <expan><ex>d</ex>an<ex>s</ex></expan> 
                                 </choice> 
-                                le <term ref="#temp">temps</term>.
+                                le <term ref="#temp">temps</term> <pc>.</pc>
                             </ab>
                             <!-- Fine quarta pericope -->
 
                             <!-- Quinta pericope -->
-                            <ab xml:id="pericope_91Caac0005" n="5" xml:lang="fr" facs="facs_pericope-5-pag2" corresp="it_91Caac0005">
+                            <ab xml:id="pericope_91Caac0005" n="5" xml:lang="fr" facs="facs_pericope-5-pag2" corresp="#it_91Caac0005">
                                 <!-- Riga 21 -->
                                 <lb xml:id="lb21-pag2" n="21" facs="#facs_pag2-lb21" />
                                 <add hand="#FdS" place="margin left" facs="#facs_pag2-lb21-add16">Sans doute,</add> 
                                 <choice resp="#B_E">
+                                    <!-- da rivedere -->
                                     <sic>L’</sic>
                                     <corr>l’</corr>
                                 </choice>
@@ -713,13 +716,13 @@
                                     <del rend="overstrike" facs="#facs_pag2-lb26-del14" > <unclear reason="deleted" cert="low" resp="#AT"> sematins</unclear> </del> <!-- da rivedere -->
                                     <subst>
                                         <del rend="overstrike" facs="#facs_pag2-lb26-del15" > le <gap atLeast="9" atMost="11" unit="chars" reason="illegible"></gap></del>
-                                        <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add21" >de ma part. </add>
+                                        <add hand="#FdS" place="above" facs="#facs_pag2-lb23-add21" >de ma part <pc>.</pc> </add>
                                     </subst>
                             </ab>
                             <!-- Fine quinta pericope -->
 
-                            <!-- Sesta pericope - finisce nella pagina seguente -->
-                            <ab xml:id="pericope_91Caac0006a" n="6" xml:lang="fr" facs="#facs_pericope-6a-pag2" corresp="it_91Caac0006">
+                            <!-- Sesta pericope - finisce nella pagina seguente --> <!-- da rivedere -->
+                            <ab xml:id="pericope_91Caac0006a" n="6" xml:lang="fr" facs="#facs_pericope-6a-pag2" corresp="#it_91Caac0006">
                                 Ce n’est que pas
                                 <!-- Riga 27 -->
                                 <lb xml:id="lb27-pag2" n="27" facs="#facs_pag2-lb27" />
@@ -727,7 +730,7 @@
                                     <sic>T</sic>
                                     <corr resp="#B_E">t</corr>
                                 </choice>
-                                ous les <unclear reason="illegible" resp="#B_E" cert="high"> <term ref="#linguiste">linguistes</term> le savent </unclear>
+                                ous les <unclear reason="illegible" resp="#B_E" cert="high"> <term ref="#linguiste">linguistes</term> le savent </unclear> 
                             </ab>
                         </div>
                     </body>
@@ -741,7 +744,7 @@
                         <ab> <fw type="pageNum" xml:id="hand-page-n-3" rend="align(left)" facs="#facs_hand-page-number-3"> 2 </fw> </ab> 
                         <div xml:id="div_pag3">
                             <!-- Continuazione pericope 6, cominciata nella pagina precedente -->
-                            <ab xml:id="pericope_91Caac0006b" n="6" xml:lang="fr" facs="#facs_pericope-6b-pag3" corresp="#pericope_91Caac0006a it_91Caac0006"> 
+                            <ab xml:id="pericope_91Caac0006b" n="6" xml:lang="fr" facs="#facs_pericope-6b-pag3" corresp="#pericope_91Caac0006a #it_91Caac0006"> 
                                 <!-- Riga 1 -->
                                 <lb xml:id="lb1-pag3" n="1" facs="#facs_pag3-lb1" />
                                 <del rend="overstrike" facs="#facs_pag3-lb1-del1">L'observation <gap atLeast="3" atMost="4" unit="chars" reason="deleted" ></gap> à fait </del>
@@ -793,12 +796,12 @@
                                 <!-- Riga 9 -->
                                 <lb xml:id="lb9-pag3" n="9" facs="#facs_pag3-lb9"/>    
                                 <emph rend="underline"> <lang xml:id="glott-3" >latin </lang> </emph>
-                                ou <emph rend="underline"> <lang xml:id="glott-4">français </lang></emph>. -
+                                ou <emph rend="underline"> <lang xml:id="glott-4">français </lang></emph> <pc>.</pc> -
                             </ab>
                             <!-- Fine sesta pericope -->
 
                             <!-- Settima pericope -->
-                            <ab xml:id="pericope_91Caac0007" n="7" xml:lang="fr" facs="#facs_pericope-7-pag3" corresp="it_91Caac0007">
+                            <ab xml:id="pericope_91Caac0007" n="7" xml:lang="fr" facs="#facs_pericope-7-pag3" corresp="#it_91Caac0007">
                                 Qu’arrive-t-il 
                                 <!-- Riga 10 -->
                                 <lb xml:id="lb10-pag3" n="10" facs="#facs_pag3-lb10" />
@@ -820,12 +823,12 @@
                                 aurait un jour <emph rend="underline">enfanté</emph> 
                                 <!-- Riga 13 -->
                                 <lb xml:id="lb13-pag3" n="13" facs="#facs_pag3-lb13" />
-                                le <lang xml:id="glott-6">français </lang> ?
+                                le <lang xml:id="glott-6">français </lang> <pc type="interrogative">?</pc>
                             </ab>
                             <!-- Fine settima pericope -->
 
                             <!-- Ottava pericope -->    
-                            <ab xml:id="pericope_91Caac0008" n="8" xml:lang="fr" facs="#facs_pericope-8-pag3" corresp="it_91Caac0008">
+                            <ab xml:id="pericope_91Caac0008" n="8" xml:lang="fr" facs="#facs_pericope-8-pag3" corresp="#it_91Caac0008">
                                 <add hand="#FdS" place="above" facs="#facs_pag3-lb13-add8">Mon Dieu </add> 
                                 <choice>
                                     <sic>On </sic> 
@@ -869,7 +872,7 @@
                             <!-- Fine ottava pericope -->
 
                             <!-- Nona pericope -->
-                            <ab xml:id="pericope_91Caac0009" n="9" xml:lang="fr" facs="#facs_pericope-9-pag3" corresp="it_91Caac0009">
+                            <ab xml:id="pericope_91Caac0009" n="9" xml:lang="fr" facs="#facs_pericope-9-pag3" corresp="#it_91Caac0009">
                                 <!-- Continuazione riga 20-->
                                 et après cela, 
                                 <del rend="overstrike" facs="#facs_pag3-lb20-del9"> 
@@ -889,7 +892,7 @@
                                 <lb xml:id="lb22-pag3" n="22" facs="#facs_pag3-lb22" />
                                 <subst> 
                                     <del rend="overstrike" facs="#facs_pag3-lb22-del12" ><unclear reason="deleted" cert="high" resp="#AT"> qu'avant </unclear></del>
-                                    <add hand="#FdS" place="above" facs="facs_pag3-lb22-add11"> qu’auparavant ?</add>
+                                    <add hand="#FdS" place="above" facs="facs_pag3-lb22-add11"> qu’auparavant <pc type="interrogative">?</pc> </add>
                                 </subst>
                             </ab>
                             <!-- Fine nona pericope -->
@@ -922,7 +925,7 @@
                                     <orig> 1 </orig>
                                     <reg> <num type="cardinal" value="1">une </num></reg>
                                 </choice> 
-                                <term ref="#transition">transition</term> <term ref="#insensible">insensible</term>.
+                                <term ref="#transition">transition</term> <term ref="#insensible">insensible</term> <pc>.</pc>
                             </ab>
                             <!-- Fine decima pericope -->
                         </div>
@@ -1317,11 +1320,16 @@
                         <country key="IT">Italia</country>
                     </place>
 
-
                     <!-- Pisa -->
                     <place xml:id="PI">
                         <placeName ref="https://www.geonames.org/3170647/pisa.html https://www.treccani.it/enciclopedia/pisa/">Pisa</placeName>
                         <country key="IT">Pisa</country>
+                    </place>
+
+                    <!-- Vufflens-le-Château -->
+                    <place xml:id="VlC">
+                        <placeName ref="https://it.wikipedia.org/wiki/Vufflens-le-Ch%C3%A2teau">Vufflens-le-Château</placeName>
+                        <country key="CH">Svizzera</country>
                     </place>
 
                 </listPlace>
