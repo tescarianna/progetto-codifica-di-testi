@@ -111,6 +111,8 @@ function manageFilters() {
             } else {
                 curElement.classList.remove('active');
             }
+            //Ricalcolo l'altezza delle pericopi
+            sameHeightElements();
         });
     });
 }
@@ -120,10 +122,13 @@ function manageFilters() {
     Fonte: https://stackoverflow.com/a/31987330
 */
 function scrollTo(element, offset = 0) {
+    if (element === null) {
+        return;
+    }
     window.scroll({
         behavior: 'smooth',
         left: 0,
-        top: element.offsetTop - document.querySelector('.header').offsetHeight - offset
+        top: (element.getBoundingClientRect().top + window.scrollY) - document.querySelector('.header').offsetHeight - offset
     });
 }
 
@@ -155,6 +160,19 @@ function handleAnchorNavigation(e) {
     }
 }
 
+//Funzione che si occupa di allineare le altezze delle pericopi
+function sameHeightElements() {
+    document.querySelectorAll("[data-same-height]").forEach(element => {
+        var sameHeightID = element.getAttribute('data-same-height');
+        var finalHeight = element.offsetHeight;
+        document.querySelectorAll('[data-same-height=' + sameHeightID + ']').forEach(elementB => {
+            if (elementB.offsetHeight > finalHeight) {
+                finalHeight = elementB.offsetHeight;
+            }
+        });
+        element.style.minHeight = finalHeight + "px";
+    });
+}
 
 /*-- DOCUMENTO CARICATO --*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -172,6 +190,14 @@ document.addEventListener('DOMContentLoaded', () => {
         manageHeaderScroll();
         manageTagNavigator();
     }
+
+    window.onresize = function() {
+        sameHeightElements();
+    }
+
+    //Avvio la funzione che regola l'altezza delle pericopi
+    sameHeightElements();
+
     // Inizializzo lo slider di pagine
     startSlider();
     // Eseguo la logica dei filtri
@@ -190,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.scroll-to').forEach(element => {
         element.addEventListener('click', (e) => {
             e.preventDefault();
-            var elementToScrollID = e.target.getAttribute('href');
+            var elementToScrollID = e.currentTarget.getAttribute('href');
             scrollTo(document.querySelector(elementToScrollID));
         });
     });

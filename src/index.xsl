@@ -143,7 +143,7 @@
                                 <li>
                                     <button data-filter-tag="reg" type="button" class="legend-filter tag-reg">
                                         <span class="legend-indicator"></span>
-                                        <span class="legend-label">Regolarizzazioni</span>
+                                        <span class="legend-label">Normalizzazioni</span>
                                     </button>
                                 </li>
                             </ul>
@@ -151,9 +151,8 @@
                     </div>
 
                     <!-- Pagina 2 -->
-                    <section id="pagina-2" class="section section-4">
+                    <section class="section section-4">
                         <div class="wrapper section-wrapper">
-                            <h2 class="pagina-1-title section-title">Pagina 2</h2>
                             <div class="section-grid-2">
                                 <div class="section-grid-row">
                                     <div class="col col-1 text-left">
@@ -166,41 +165,18 @@
                                 <div class="section-grid-row">
                                     <div class="col col-1">
                                         <div class="analyzed-text">
-                                            <xsl:apply-templates select="//tei:text//tei:div[@xml:id='div_pag2']" />
+                                            <!-- Trascrizione -->
+                                            <div class="text">
+                                                <xsl:apply-templates select="//tei:text[@subtype='manuscript']//tei:group[@type='transcription']" />
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col col-2">
                                         <div class="translated-text">
-                                            <xsl:apply-templates select="//tei:text[@xml:id='it_prolusioni3-pag2']" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Pagina 3 -->
-                    <section id="pagina-3" class="section section-4">
-                        <div class="wrapper section-wrapper">
-                            <h2 class="pagina-1-title section-title">Pagina 3</h2>
-                            <div class="section-grid-2">
-                                <div class="section-grid-row">
-                                    <div class="col col-1 text-left">
-                                        <h3 class="trans">Trascrizione</h3>
-                                    </div>
-                                    <div class="col col-2 text-left">
-                                        <h3 class="trans">Traduzione</h3>
-                                    </div>
-                                </div>
-                                <div class="section-grid-row">
-                                    <div class="col col-1">
-                                        <div class="analyzed-text">
-                                            <xsl:apply-templates select="//tei:text//tei:div[@xml:id='div_pag3']" />
-                                        </div>
-                                    </div>
-                                    <div class="col col-2">
-                                        <div class="translated-text">
-                                            <xsl:apply-templates select="//tei:text[@xml:id='it_prolusioni3-pag3']" />
+                                            <!-- Traduzione -->
+                                            <div class="text">
+                                                <xsl:apply-templates select="//tei:text[@subtype='manuscript']//tei:group[@type='translation']" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -396,15 +372,48 @@
         </xsl:for-each>
     </xsl:template>
 
+    <!-- Template per trascrizioni -->
+    <xsl:template match="tei:group[@type='transcription']">
+        <div class="pericope-group">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <!-- Template per traduzioni -->
+    <xsl:template match="tei:group[@type='translation']">
+        <div class="pericope-group">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <!-- Template page beginning -->
+    <xsl:template match="tei:pb">
+        <xsl:if test="[@type]='page_full'">
+            <xsl:element name="h3">
+                <xsl:attribute name="id">pagina-<xsl:value-of select="[@n]"/></xsl:attribute>
+                <xsl:attribute name="class">section-title</xsl:attribute>
+                Pagina <xsl:value-of select="[@n]"/>
+            </xsl:element>
+        </xsl:if>
+    </xsl:template>
+
     <!-- Lista Template per renderizzare HTML personalizzato a seconda del tag utilizzato nella codifica -->
     
+    <!-- Template forme work -->
+    <xsl:template match="tei:fw">
+    </xsl:template>
+
     <!-- Pericope -->
     <xsl:template match="tei:ab">
-        <xsl:element name="h4">
-            <xsl:attribute name="class">pericope</xsl:attribute>
-            Pericope <xsl:value-of select="@n" />
+        <xsl:element name="div">
+            <xsl:attribute name="class">pericope-container</xsl:attribute>
+            <xsl:attribute name="data-same-height">same-height-<xsl:value-of select="@n"/></xsl:attribute>
+            <xsl:element name="h4">
+                <xsl:attribute name="class">pericope</xsl:attribute>
+                Pericope <xsl:value-of select="@n" />
+            </xsl:element>
+            <xsl:apply-templates/>
         </xsl:element>
-        <xsl:apply-templates/>
     </xsl:template>
 
 
@@ -417,6 +426,7 @@
             </xsl:attribute>
             <xsl:attribute name="class">row-number</xsl:attribute>
             <xsl:value-of select="@n" />
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
@@ -491,7 +501,7 @@
             <xsl:element name="a">
                 <xsl:attribute name="class">scroll-to</xsl:attribute>
                 <xsl:attribute name="href"><xsl:value-of select="@ref"/></xsl:attribute>
-                <xsl:value-of select="."/>
+                <xsl:apply-templates/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
@@ -500,14 +510,14 @@
     <xsl:template match="tei:lang">
         <xsl:element name="span">
             <xsl:attribute name="class">lang</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
     
     <!-- Enfasi -->
-    <xsl:template match="tei:emph">
+    <xsl:template match="tei:*[@rend='underline']">
         <xsl:element name="span">
-            <xsl:attribute name="class">emph</xsl:attribute>
+            <xsl:attribute name="class">underline</xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
@@ -516,7 +526,7 @@
     <xsl:template match="tei:hi[@rend='italic']">
         <xsl:element name="span">
             <xsl:element name="i">
-                <xsl:value-of select="."/>
+                <xsl:apply-templates/>
             </xsl:element>
         </xsl:element>
     </xsl:template>

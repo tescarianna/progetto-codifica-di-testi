@@ -343,7 +343,7 @@ p {
 }
 
 .section-4 .trans {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
     text-align: left;
 }
 
@@ -359,11 +359,20 @@ p {
 
 .section-4 .section-title {
     padding-bottom: var(--space-2);
+    line-height: var(--font-size-4);
+    min-height: 50px;
+    text-align: left;
     border-bottom: 1px solid var(--color-6);
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
 }
 
 .section-4 .pericope:first-child {
     padding-top: 0px;
+}
+
+.pericope-container {
+    padding: var(--space-3) 0;
 }
 
 .analyzed-text {
@@ -402,6 +411,7 @@ p {
     background-color: var(--color-highlighted);
     color: var(--color-1);
     line-height: var(--font-size-1);
+    font-weight: 500;
 }
 
 .analyzed-text .highlighted.del,
@@ -443,6 +453,10 @@ p {
     content: "";
     position: absolute;
     left: 0;
+}
+
+.analyzed-text .underline {
+    text-decoration: underline;
 }
 
 .analyzed-text .highlighted.sic {
@@ -498,6 +512,7 @@ p {
     margin-bottom: var(--space-1);
     display: inline-block;
     padding: var(--space-1);
+    font-weight: 500;
 }
 
 /* Section 7- bibliografia */
